@@ -1,0 +1,8 @@
+# Vídeo de demonstração (muito grande para o GitHub, limite de 100MB)
+video_executando.mov
+
+# Arquivos comuns a ignorar
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
