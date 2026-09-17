@@ -20,6 +20,10 @@ import os
 import time
 
 import pandas as pd
+from dotenv import load_dotenv
+
+load_dotenv()  # carrega o .env pra dentro de os.environ
+
 import requests
 
 MARKET_ID = 355
@@ -97,7 +101,9 @@ def coletar_categoria(item_basico: str, category_id: int) -> list[dict]:
         if not itens:
             break
         todos.extend(itens)
-        print(f"  {item_basico} (cat {category_id}) / pagina {page}: +{len(itens)} itens (total {len(todos)})")
+        print(
+            f"  {item_basico} (cat {category_id}) / pagina {page}: +{len(itens)} itens (total {len(todos)})"
+        )
         if not payload.get("has_next_page"):
             break
         page += 1
@@ -113,11 +119,13 @@ if __name__ == "__main__":
         try:
             registros.extend(coletar_categoria(nome, cat_id))
         except requests.exceptions.HTTPError as e:
-            print(f"  [ERRO] Falhou em '{nome}': {e}. Seguindo com o que ja foi coletado.")
+            print(
+                f"  [ERRO] Falhou em '{nome}': {e}. Seguindo com o que ja foi coletado."
+            )
         time.sleep(PAUSA_ENTRE_REQUISICOES)
 
     df = pd.DataFrame(registros)
-    df.to_csv("dados_brutos.csv", index=False, encoding="utf-8-sig")
-    print(f"\nColetados {len(df)} registros -> dados_brutos.csv")
+    df.to_csv("dados/dados_brutos.csv", index=False, encoding="utf-8-sig")
+    print(f"\nColetados {len(df)} registros -> dados/dados_brutos.csv")
     if not df.empty:
         print(df["item_basico"].value_counts())

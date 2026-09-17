@@ -1,7 +1,7 @@
-1. Em média, Óleo é o item mais caro da cesta (R$ 19.66) e Açúcar o mais barato (R$ 8.85).
+1. Em média, Óleo é o item mais caro da cesta (R$ 19.66) e Açúcar o mais barato (R$ 9.07).
 
 2. Arroz é o item com maior variação de preço entre marcas: 783% de diferença entre a opção mais barata ("ARROZ ARA BRANCO LONGO FINO TIPO 1 1KG", R$ 4.94) e a mais cara ("ARROZ NEGRO LA PASTINA 500G", R$ 43.63).
 
 3. Já Ovos é o item com menor variação de preço entre marcas (165%), sugerindo um mercado mais padronizado/menos diferenciado para esse produto nessa loja.
 
-4. Arroz também é o item com maior dispersão de preços (desvio padrão de R$ 12.52), coerente com ser uma categoria com muitas marcas e variações de tipo/qualidade coletadas.
+4. Arroz também é o item com maior dispersão de preços (desvio padrão de R$ 12.55), coerente com ser uma categoria com muitas marcas e variações de tipo/qualidade coletadas.

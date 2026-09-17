@@ -26,9 +26,9 @@ import re
 
 import pandas as pd
 
-ARQUIVO_ENTRADA = "dados_brutos.csv"
-ARQUIVO_SAIDA = "dados_tratados.csv"
-ARQUIVO_EXCLUIDOS = "itens_excluidos_pelo_filtro.csv"
+ARQUIVO_ENTRADA = "dados/dados_brutos.csv"
+ARQUIVO_SAIDA = "dados/dados_tratados.csv"
+ARQUIVO_EXCLUIDOS = "dados/itens_excluidos_pelo_filtro.csv"
 
 # Um padrao por item_basico: o produto so e mantido se o NOME COMECAR com um
 # dos padroes abaixo (case-insensitive). Usar "comeca com" em vez de "contem"
@@ -83,7 +83,9 @@ def tratar_valores_ausentes(df: pd.DataFrame) -> pd.DataFrame:
     df["preco_original"] = df["preco_original"].fillna(df["preco"])
     removidos = antes - len(df)
     if removidos:
-        print(f"[tratamento] {removidos} registro(s) removido(s) por falta de nome/preco.")
+        print(
+            f"[tratamento] {removidos} registro(s) removido(s) por falta de nome/preco."
+        )
     return df
 
 
@@ -152,7 +154,9 @@ if __name__ == "__main__":
         )
         print(excluidos.groupby("item_basico")["nome_produto"].apply(list).to_string())
         excluidos.to_csv(ARQUIVO_EXCLUIDOS, index=False, encoding="utf-8-sig")
-        print(f"  -> lista completa salva em {ARQUIVO_EXCLUIDOS} (util para o anexo do relatorio).")
+        print(
+            f"  -> lista completa salva em {ARQUIVO_EXCLUIDOS} (util para o anexo do relatorio)."
+        )
 
     df.to_csv(ARQUIVO_SAIDA, index=False, encoding="utf-8-sig")
     print(f"\nRegistros tratados: {len(df)} -> {ARQUIVO_SAIDA}")

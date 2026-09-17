@@ -15,24 +15,27 @@ Uso:
     python3 analise.py
 """
 
-import pandas as pd
 import matplotlib.pyplot as plt
+import pandas as pd
 
-ARQUIVO_ENTRADA = "dados_tratados.csv"
+ARQUIVO_ENTRADA = "dados/dados_tratados.csv"
 
 # Paleta categorica (fixa por item_basico, reaproveitada em todos os graficos
 # para manter a mesma cor = mesma entidade em todo o trabalho).
 CORES_ITEM = {
-    "arroz": "#2a78d6",   # azul
+    "arroz": "#2a78d6",  # azul
     "feijao": "#eb6834",  # laranja
     "acucar": "#1baf7a",  # verde-agua
-    "oleo": "#eda100",    # amarelo
-    "ovos": "#e87ba4",    # magenta
+    "oleo": "#eda100",  # amarelo
+    "ovos": "#e87ba4",  # magenta
 }
 ORDEM_ITENS = ["arroz", "feijao", "acucar", "oleo", "ovos"]
 NOMES_BONITOS = {
-    "arroz": "Arroz", "feijao": "Feijão", "acucar": "Açúcar",
-    "oleo": "Óleo", "ovos": "Ovos",
+    "arroz": "Arroz",
+    "feijao": "Feijão",
+    "acucar": "Açúcar",
+    "oleo": "Óleo",
+    "ovos": "Ovos",
 }
 
 COR_MENOR = "#2a78d6"  # azul - "menor preco" (polo "bom")
@@ -57,16 +60,27 @@ def estilo_eixo(ax):
 
 def carregar_dados():
     df = pd.read_csv(ARQUIVO_ENTRADA, encoding="utf-8-sig")
-    df["item_basico"] = pd.Categorical(df["item_basico"], categories=ORDEM_ITENS, ordered=True)
+    df["item_basico"] = pd.Categorical(
+        df["item_basico"], categories=ORDEM_ITENS, ordered=True
+    )
     return df.sort_values("item_basico")
 
 
 def calcular_estatisticas(df: pd.DataFrame) -> pd.DataFrame:
-    stats = df.groupby("item_basico", observed=True)["preco"].agg(
-        contagem="count", media="mean", mediana="median", minimo="min", maximo="max", desvio_padrao="std"
-    ).round(2)
+    stats = (
+        df.groupby("item_basico", observed=True)["preco"]
+        .agg(
+            contagem="count",
+            media="mean",
+            mediana="median",
+            minimo="min",
+            maximo="max",
+            desvio_padrao="std",
+        )
+        .round(2)
+    )
     stats = stats.reindex(ORDEM_ITENS)
-    stats.to_csv("estatisticas_descritivas.csv", encoding="utf-8-sig")
+    stats.to_csv("dados/estatisticas_descritivas.csv", encoding="utf-8-sig")
     print("Estatísticas descritivas (também salvas em estatisticas_descritivas.csv):")
     print(stats.to_string())
     return stats
@@ -78,15 +92,27 @@ def grafico1_preco_medio(stats: pd.DataFrame):
     cores = [CORES_ITEM[i] for i in stats.index]
     barras = ax.bar(itens, stats["media"], color=cores, width=0.6, zorder=3)
     for barra, valor in zip(barras, stats["media"]):
-        ax.annotate(f"R$ {valor:.2f}", (barra.get_x() + barra.get_width() / 2, valor),
-                    textcoords="offset points", xytext=(0, 5), ha="center",
-                    fontsize=9, color=INK)
-    ax.set_title("Preço médio por item básico da cesta", fontsize=13, fontweight="bold", color=INK, pad=14)
+        ax.annotate(
+            f"R$ {valor:.2f}",
+            (barra.get_x() + barra.get_width() / 2, valor),
+            textcoords="offset points",
+            xytext=(0, 5),
+            ha="center",
+            fontsize=9,
+            color=INK,
+        )
+    ax.set_title(
+        "Preço médio por item básico da cesta",
+        fontsize=13,
+        fontweight="bold",
+        color=INK,
+        pad=14,
+    )
     ax.set_ylabel("Preço médio (R$)", color=INK_SECUNDARIA)
     ax.set_xlabel("Item básico", color=INK_SECUNDARIA)
     estilo_eixo(ax)
     fig.tight_layout()
-    fig.savefig("grafico1_preco_medio.png")
+    fig.savefig("graficos/grafico1_preco_medio.png")
     plt.close(fig)
     print("Salvo: grafico1_preco_medio.png")
 
@@ -95,28 +121,47 @@ def grafico2_distribuicao_precos(df: pd.DataFrame):
     fig, ax = plt.subplots(figsize=(7.5, 4.5), dpi=150)
     dados = [df.loc[df["item_basico"] == i, "preco"].values for i in ORDEM_ITENS]
     bp = ax.boxplot(
-        dados, tick_labels=[NOMES_BONITOS[i] for i in ORDEM_ITENS], patch_artist=True,
-        widths=0.55, medianprops=dict(color=INK, linewidth=1.5),
-        whiskerprops=dict(color=INK_SECUNDARIA), capprops=dict(color=INK_SECUNDARIA),
-        flierprops=dict(marker="o", markersize=4, markerfacecolor="none", markeredgecolor=INK_SECUNDARIA),
+        dados,
+        tick_labels=[NOMES_BONITOS[i] for i in ORDEM_ITENS],
+        patch_artist=True,
+        widths=0.55,
+        medianprops=dict(color=INK, linewidth=1.5),
+        whiskerprops=dict(color=INK_SECUNDARIA),
+        capprops=dict(color=INK_SECUNDARIA),
+        flierprops=dict(
+            marker="o",
+            markersize=4,
+            markerfacecolor="none",
+            markeredgecolor=INK_SECUNDARIA,
+        ),
     )
     for patch, item in zip(bp["boxes"], ORDEM_ITENS):
         patch.set_facecolor(CORES_ITEM[item])
         patch.set_alpha(0.55)
         patch.set_edgecolor(CORES_ITEM[item])
-    ax.set_title("Distribuição de preços por item básico", fontsize=13, fontweight="bold", color=INK, pad=14)
+    ax.set_title(
+        "Distribuição de preços por item básico",
+        fontsize=13,
+        fontweight="bold",
+        color=INK,
+        pad=14,
+    )
     ax.set_ylabel("Preço (R$)", color=INK_SECUNDARIA)
     ax.set_xlabel("Item básico", color=INK_SECUNDARIA)
     estilo_eixo(ax)
     fig.tight_layout()
-    fig.savefig("grafico2_distribuicao_precos.png")
+    fig.savefig("graficos/grafico2_distribuicao_precos.png")
     plt.close(fig)
     print("Salvo: grafico2_distribuicao_precos.png")
 
 
 def _linha_extremo(df, item, kind):
     sub = df[df["item_basico"] == item]
-    row = sub.loc[sub["preco"].idxmin()] if kind == "min" else sub.loc[sub["preco"].idxmax()]
+    row = (
+        sub.loc[sub["preco"].idxmin()]
+        if kind == "min"
+        else sub.loc[sub["preco"].idxmax()]
+    )
     return row["nome_produto"], row["preco"]
 
 
@@ -127,39 +172,82 @@ def grafico3_menor_maior_preco(df: pd.DataFrame) -> pd.DataFrame:
     for item in ORDEM_ITENS:
         nome_min, preco_min = _linha_extremo(df, item, "min")
         nome_max, preco_max = _linha_extremo(df, item, "max")
-        linhas.append({
-            "item_basico": item, "produto_mais_barato": nome_min, "preco_min": preco_min,
-            "produto_mais_caro": nome_max, "preco_max": preco_max,
-            "diferenca_absoluta": round(preco_max - preco_min, 2),
-            "diferenca_percentual": round((preco_max - preco_min) / preco_min * 100, 1),
-        })
+        linhas.append(
+            {
+                "item_basico": item,
+                "produto_mais_barato": nome_min,
+                "preco_min": preco_min,
+                "produto_mais_caro": nome_max,
+                "preco_max": preco_max,
+                "diferenca_absoluta": round(preco_max - preco_min, 2),
+                "diferenca_percentual": round(
+                    (preco_max - preco_min) / preco_min * 100, 1
+                ),
+            }
+        )
     resumo = pd.DataFrame(linhas)
-    resumo.to_csv("resumo_menor_maior_preco.csv", index=False, encoding="utf-8-sig")
+    resumo.to_csv(
+        "dados/resumo_menor_maior_preco.csv", index=False, encoding="utf-8-sig"
+    )
 
     fig, ax = plt.subplots(figsize=(9, 5), dpi=150)
     y = range(len(ORDEM_ITENS))
     altura = 0.35
-    ax.barh([p + altura / 2 for p in y], resumo["preco_min"], height=altura,
-            color=COR_MENOR, label="Menor preço", zorder=3)
-    ax.barh([p - altura / 2 for p in y], resumo["preco_max"], height=altura,
-            color=COR_MAIOR, label="Maior preço", zorder=3)
+    ax.barh(
+        [p + altura / 2 for p in y],
+        resumo["preco_min"],
+        height=altura,
+        color=COR_MENOR,
+        label="Menor preço",
+        zorder=3,
+    )
+    ax.barh(
+        [p - altura / 2 for p in y],
+        resumo["preco_max"],
+        height=altura,
+        color=COR_MAIOR,
+        label="Maior preço",
+        zorder=3,
+    )
     for p, (_, row) in zip(y, resumo.iterrows()):
-        ax.annotate(f"R$ {row['preco_min']:.2f}", (row["preco_min"], p + altura / 2),
-                    textcoords="offset points", xytext=(6, 0), va="center", fontsize=8.5, color=INK)
-        ax.annotate(f"R$ {row['preco_max']:.2f}", (row["preco_max"], p - altura / 2),
-                    textcoords="offset points", xytext=(6, 0), va="center", fontsize=8.5, color=INK)
+        ax.annotate(
+            f"R$ {row['preco_min']:.2f}",
+            (row["preco_min"], p + altura / 2),
+            textcoords="offset points",
+            xytext=(6, 0),
+            va="center",
+            fontsize=8.5,
+            color=INK,
+        )
+        ax.annotate(
+            f"R$ {row['preco_max']:.2f}",
+            (row["preco_max"], p - altura / 2),
+            textcoords="offset points",
+            xytext=(6, 0),
+            va="center",
+            fontsize=8.5,
+            color=INK,
+        )
     ax.set_yticks(list(y))
     ax.set_yticklabels([NOMES_BONITOS[i] for i in ORDEM_ITENS])
     ax.set_xlabel("Preço (R$)", color=INK_SECUNDARIA)
-    ax.set_title("Menor x maior preço por item básico", fontsize=13, fontweight="bold", color=INK, pad=14)
+    ax.set_title(
+        "Menor x maior preço por item básico",
+        fontsize=13,
+        fontweight="bold",
+        color=INK,
+        pad=14,
+    )
     ax.legend(frameon=False, loc="upper right")
     estilo_eixo(ax)
     ax.xaxis.grid(False)
     fig.tight_layout()
-    fig.savefig("grafico3_menor_maior_preco.png")
+    fig.savefig("graficos/grafico3_menor_maior_preco.png")
     plt.close(fig)
     print("Salvo: grafico3_menor_maior_preco.png")
-    print("\nResumo menor x maior preço (também salvo em resumo_menor_maior_preco.csv):")
+    print(
+        "\nResumo menor x maior preço (também salvo em resumo_menor_maior_preco.csv):"
+    )
     print(resumo.to_string(index=False))
     return resumo
 
@@ -172,16 +260,37 @@ def montar_dashboard(stats: pd.DataFrame, resumo: pd.DataFrame):
     cores = [CORES_ITEM[i] for i in stats.index]
     barras = ax1.bar(itens, stats["media"], color=cores, width=0.6, zorder=3)
     for barra, valor in zip(barras, stats["media"]):
-        ax1.annotate(f"R$ {valor:.2f}", (barra.get_x() + barra.get_width() / 2, valor),
-                     textcoords="offset points", xytext=(0, 5), ha="center", fontsize=8.5, color=INK)
+        ax1.annotate(
+            f"R$ {valor:.2f}",
+            (barra.get_x() + barra.get_width() / 2, valor),
+            textcoords="offset points",
+            xytext=(0, 5),
+            ha="center",
+            fontsize=8.5,
+            color=INK,
+        )
     ax1.set_title("Preço médio por item", fontsize=12, fontweight="bold", color=INK)
     ax1.set_ylabel("Preço médio (R$)", color=INK_SECUNDARIA)
     estilo_eixo(ax1)
 
     y = range(len(ORDEM_ITENS))
     altura = 0.35
-    ax2.barh([p + altura / 2 for p in y], resumo["preco_min"], height=altura, color=COR_MENOR, label="Menor preço", zorder=3)
-    ax2.barh([p - altura / 2 for p in y], resumo["preco_max"], height=altura, color=COR_MAIOR, label="Maior preço", zorder=3)
+    ax2.barh(
+        [p + altura / 2 for p in y],
+        resumo["preco_min"],
+        height=altura,
+        color=COR_MENOR,
+        label="Menor preço",
+        zorder=3,
+    )
+    ax2.barh(
+        [p - altura / 2 for p in y],
+        resumo["preco_max"],
+        height=altura,
+        color=COR_MAIOR,
+        label="Maior preço",
+        zorder=3,
+    )
     ax2.set_yticks(list(y))
     ax2.set_yticklabels([NOMES_BONITOS[i] for i in ORDEM_ITENS])
     ax2.set_xlabel("Preço (R$)", color=INK_SECUNDARIA)
@@ -190,12 +299,17 @@ def montar_dashboard(stats: pd.DataFrame, resumo: pd.DataFrame):
     estilo_eixo(ax2)
     ax2.xaxis.grid(False)
 
-    fig.suptitle("Dashboard — Cesta básica no São Luiz (mercadinhossaoluiz.com.br)",
-                 fontsize=14, fontweight="bold", color=INK, y=1.02)
+    fig.suptitle(
+        "Dashboard — Cesta básica no São Luiz (mercadinhossaoluiz.com.br)",
+        fontsize=14,
+        fontweight="bold",
+        color=INK,
+        y=1.02,
+    )
     fig.tight_layout()
-    fig.savefig("dashboard.png", bbox_inches="tight")
+    fig.savefig("graficos/dashboard.png", bbox_inches="tight")
     plt.close(fig)
-    print("Salvo: dashboard.png")
+    print("Salvo: graficos/dashboard.png")
 
 
 def identificar_insights(stats: pd.DataFrame, resumo: pd.DataFrame) -> list:
@@ -213,8 +327,8 @@ def identificar_insights(stats: pd.DataFrame, resumo: pd.DataFrame) -> list:
     insights.append(
         f"2. {NOMES_BONITOS[maior_variacao['item_basico']]} é o item com maior variação de preço "
         f"entre marcas: {maior_variacao['diferenca_percentual']:.0f}% de diferença entre a opção "
-        f"mais barata (\"{maior_variacao['produto_mais_barato']}\", R$ {maior_variacao['preco_min']:.2f}) "
-        f"e a mais cara (\"{maior_variacao['produto_mais_caro']}\", R$ {maior_variacao['preco_max']:.2f})."
+        f'mais barata ("{maior_variacao["produto_mais_barato"]}", R$ {maior_variacao["preco_min"]:.2f}) '
+        f'e a mais cara ("{maior_variacao["produto_mais_caro"]}", R$ {maior_variacao["preco_max"]:.2f}).'
     )
 
     menor_variacao = resumo.loc[resumo["diferenca_percentual"].idxmin()]

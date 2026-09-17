@@ -1,0 +1,270 @@
+﻿item_basico,nome_produto,preco,preco_original,em_oferta,loja_market_id,categoria_id,codigo_barras,estoque,slug,url_produto
+arroz,ARROZ TIO JOÃO BRANCO LONGO FINO TIPO 1 1KG,6.39,7.11,True,355,13758,7893500020110,117,arroz-polido-tio-joao-saco-1kg,https://mercadinhossaoluiz.com.br/produto/arroz-polido-tio-joao-saco-1kg
+arroz,ARROZ TIO JOÃO COZINHA FÁCIL À GREGA 250G,9.95,9.95,False,355,13758,7893500025337,1,arroz-a-grega-tio-joao-250g,https://mercadinhossaoluiz.com.br/produto/arroz-a-grega-tio-joao-250g
+arroz,ARROZ TIO JOÃO COZINHA FÁCIL ERVAS FINA 250G,9.95,9.95,False,355,13758,7893500025344,3,arroz-tio-joao-cozinha-facil-250g-ervas-finas,https://mercadinhossaoluiz.com.br/produto/arroz-tio-joao-cozinha-facil-250g-ervas-finas
+arroz,ARROZ ARBÓRIO LA PASTINA 1KG,41.05,41.05,False,355,13758,7896196080260,16,arroz-arborio-la-pastina-1kg,https://mercadinhossaoluiz.com.br/produto/arroz-arborio-la-pastina-1kg
+arroz,ARROZ TIO JOÃO COZINHA FÁCIL BRÓCOLIS 250G,9.95,9.95,False,355,13758,7893500025375,1,arroz-tio-joao-cozinha-facil-brocolis-250g,https://mercadinhossaoluiz.com.br/produto/arroz-tio-joao-cozinha-facil-brocolis-250g
+arroz,ARROZ TIO JOÃO PARBOILIZADO 1KG,6.09,6.09,False,355,13758,7893500018469,87,arroz-parboilizado-tio-joao-1kg,https://mercadinhossaoluiz.com.br/produto/arroz-parboilizado-tio-joao-1kg
+arroz,ARROZ CAMIL PARBOILIZADO LONGO FINO TIPO 1 1KG,5.78,5.78,False,355,13758,7896006716112,39,arroz-parboilizado-camil-1kg-4200,https://mercadinhossaoluiz.com.br/produto/arroz-parboilizado-camil-1kg-4200
+arroz,ARROZ TIO JOÃO VARIEDADES MUNDIAIS CARNAROLLI ITALIANA 1KG,33.11,33.11,False,355,13758,7893500019206,3,arroz-tio-joao-carnaroli-cozinha-italiana-variedades-mundiais-1kg,https://mercadinhossaoluiz.com.br/produto/arroz-tio-joao-carnaroli-cozinha-italiana-variedades-mundiais-1kg
+arroz,ARROZ TIO JOÃO VARIEDADES MUNDIAIS SASANISHIKI JAPONESA 1KG,23.36,23.36,False,355,13758,7893500019220,1,arroz-tio-joao-cozinha-japonesa-sasanishiki-1kg,https://mercadinhossaoluiz.com.br/produto/arroz-tio-joao-cozinha-japonesa-sasanishiki-1kg
+arroz,ARROZ TIO JOÃO COZINHA & SABOR CARRETEIRO 175G,13.57,13.57,False,355,13758,7893500012672,5,arroz-carreteiro-tio-joao-175g,https://mercadinhossaoluiz.com.br/produto/arroz-carreteiro-tio-joao-175g
+arroz,ARROZ TIO JOÃO PARBOILIZADO C/8 SAQUINHOS 1KG,6.73,6.73,False,355,13758,7893500018476,3,arroz-tio-joao-parboilizado-saquinho-1kg,https://mercadinhossaoluiz.com.br/produto/arroz-tio-joao-parboilizado-saquinho-1kg
+arroz,ARROZ ARBÓRIO PAGANINI 1KG,43.36,43.36,False,355,13758,7898152992129,3,arroz-arboreo-paganini-1kg,https://mercadinhossaoluiz.com.br/produto/arroz-arboreo-paganini-1kg
+arroz,ARROZ TIO JOÃO COZINHA & SABOR GALINHA 175G,13.57,13.57,False,355,13758,7893500012689,2,arroz-tio-joao-sabor-galinha-175g-83119,https://mercadinhossaoluiz.com.br/produto/arroz-tio-joao-sabor-galinha-175g-83119
+arroz,ARROZ CAMIL INTEGRAL 1KG,7.46,7.46,False,355,13758,7896006755517,19,arroz-integral-camil-pacote-1kg,https://mercadinhossaoluiz.com.br/produto/arroz-integral-camil-pacote-1kg
+arroz,ARROZ TIO JOÃO ORGÂNICO INTEGRAL 1KG,18.47,18.47,False,355,13758,7893500034827,8,arroz-integral-tio-joao-organico-1kg,https://mercadinhossaoluiz.com.br/produto/arroz-integral-tio-joao-organico-1kg
+arroz,ARROZ URBANO PARBOILIZADO LONGO FINO 1KG,5.67,5.67,False,355,13758,7896038306053,36,arroz-parboilizado-urbano-1kg-4687,https://mercadinhossaoluiz.com.br/produto/arroz-parboilizado-urbano-1kg-4687
+arroz,ARROZ ARA BRANCO LONGO FINO TIPO 1 1KG,4.94,4.94,False,355,13758,7898936614063,14,arroz-branco-ara-1kg,https://mercadinhossaoluiz.com.br/produto/arroz-branco-ara-1kg
+arroz,ARROZ TIO JOÃO 7 GRÃOS C/ QUINOA 500G,12.73,12.73,False,355,13758,7893500045434,3,arroz-tio-joao-7-cereais-integral-com-quinoa-500g,https://mercadinhossaoluiz.com.br/produto/arroz-tio-joao-7-cereais-integral-com-quinoa-500g
+arroz,ARROZ NEGRO LA PASTINA 500G,43.63,43.63,False,355,13758,7896196060361,1,arroz-negro-la-pastina-500g,https://mercadinhossaoluiz.com.br/produto/arroz-negro-la-pastina-500g
+arroz,ARROZ MEU BIJU INTEGRAL 8 GRÃOS COM QUINOA 500G,6.99,10.62,True,355,13758,7893500058731,3,arroz-integral-8-graos-com-quinoa-biju-pacote-500g,https://mercadinhossaoluiz.com.br/produto/arroz-integral-8-graos-com-quinoa-biju-pacote-500g
+arroz,ARROZ TIO JOÃO COZINHA FÁCIL INTEGRAL VEGETAIS 200G,9.95,9.95,False,355,13758,7893500089629,1,arroz-tio-joao-cozinha-facil-200g-vegetais,https://mercadinhossaoluiz.com.br/produto/arroz-tio-joao-cozinha-facil-200g-vegetais
+arroz,ARROZ ARBÓRIO PAGANINI 500G,22.73,22.73,False,355,13758,7898152997087,4,arroz-arboreo-paganini-500g,https://mercadinhossaoluiz.com.br/produto/arroz-arboreo-paganini-500g
+arroz,ARROZ BASMATI LA CUMPARSITA 500G,30.62,30.62,False,355,13758,7898152996745,4,arroz-basmati-la-cumparsita-500g,https://mercadinhossaoluiz.com.br/produto/arroz-basmati-la-cumparsita-500g
+arroz,ARROZ URBANO 7 GRÃOS 1KG,20.52,20.52,False,355,13758,7896038300013,2,arroz-urbano-1kg-7-graos,https://mercadinhossaoluiz.com.br/produto/arroz-urbano-1kg-7-graos
+arroz,BISCOITO ARROZ NATURATTA INTEGRAL ZERO 60G,11.99,11.99,False,355,13758,7898965335106,3,biscoito-arroz-naturatta-integral-zero-60g,https://mercadinhossaoluiz.com.br/produto/biscoito-arroz-naturatta-integral-zero-60g
+arroz,ARROZ BASMATI LA PASTINA 500G,38.16,38.16,False,355,13758,7896196069371,2,arroz-basmati-la-pastina-500g,https://mercadinhossaoluiz.com.br/produto/arroz-basmati-la-pastina-500g
+arroz,ARROZ MEU BIJU 8 GRAOS INTEGRAIS 500G,6.99,10.62,True,355,13758,7893500124351,2,arroz-meu-biju-8-graos-integrais-500g,https://mercadinhossaoluiz.com.br/produto/arroz-meu-biju-8-graos-integrais-500g
+arroz,ARROZ TIO JOAO TOMATE E MANJERICAO 250G                                                                                                             ,9.95,9.95,False,355,13758,7893500044413,3,arroz-tio-joao-tomate-e-manjericao-250g,https://mercadinhossaoluiz.com.br/produto/arroz-tio-joao-tomate-e-manjericao-250g
+arroz,ARROZ FGO MOLHO BCO BACON PD CONG 300G,12.05,12.05,False,355,13758,7891515625535,24,,https://mercadinhossaoluiz.com.br/produto/None
+arroz,ARROZ CENOURA E AMENDOAS 1KG,22.5,22.5,False,355,13758,99147,999999,arroz-int-cenoura-abobrinha-rot-kg,https://mercadinhossaoluiz.com.br/produto/arroz-int-cenoura-abobrinha-rot-kg
+arroz,ARROZ NATALINO  1KG,32.5,32.5,False,355,13758,64300,999999,arroz-a-grega-300g-806391,https://mercadinhossaoluiz.com.br/produto/arroz-a-grega-300g-806391
+feijao,FEIJÃO PRETO COMBRASIL TIPO 1 1KG,11.47,11.47,False,355,13759,7896101062015,17,feijao-combrasil-preto-1kg,https://mercadinhossaoluiz.com.br/produto/feijao-combrasil-preto-1kg
+feijao,FEIJAO VERDE NATAN 1KG                                                     ,32.41,32.41,False,355,13759,7898902651016,22,feijao-verde-natan-1kg-99645,https://mercadinhossaoluiz.com.br/produto/feijao-verde-natan-1kg-99645
+feijao,FEIJAO VERDE NATAN 500G,16.2,16.2,False,355,13759,7898902651023,35,feijao-verde-natan-500g-95868,https://mercadinhossaoluiz.com.br/produto/feijao-verde-natan-500g-95868
+feijao,FEIJÃO DE CORDA FIBRA TIPO 1 1KG,6.58,6.58,False,355,13759,7898384200016,23,feijao-de-corda-tipo-1-fibra-pacote-1kg,https://mercadinhossaoluiz.com.br/produto/feijao-de-corda-tipo-1-fibra-pacote-1kg
+feijao,FEIJÃO CARIOCA FIBRA 1KG,8.94,8.94,False,355,13759,7898384200023,46,feijao-carioca-tipo-1-fibra-pacote-1kg,https://mercadinhossaoluiz.com.br/produto/feijao-carioca-tipo-1-fibra-pacote-1kg
+feijao,FEIJÃO CARIOCA KICALDO 1KG,9.88,9.88,False,355,13759,7896116900029,63,feijao-carioca-kicaldo-1kg-4108,https://mercadinhossaoluiz.com.br/produto/feijao-carioca-kicaldo-1kg-4108
+feijao,FEIJÃO BRANCO FIBRA 1KG,7.25,7.25,False,355,13759,7898384200122,13,feijao-branco-tipo-1-fibra-pacote-1kg,https://mercadinhossaoluiz.com.br/produto/feijao-branco-tipo-1-fibra-pacote-1kg
+feijao,FEIJÃO PRETO KICALDO 1KG,7.78,7.78,False,355,13759,7896116900050,18,feijao-preto-kicaldo-1kg-4707,https://mercadinhossaoluiz.com.br/produto/feijao-preto-kicaldo-1kg-4707
+feijao,FEIJÃO DE CORDA KICALDO 1KG,7.11,7.11,False,355,13759,7896116901347,24,feijao-de-corda-kicaldo-pacote-1kg,https://mercadinhossaoluiz.com.br/produto/feijao-de-corda-kicaldo-pacote-1kg
+feijao,FEIJÃO FRADINHO KICALDO 1KG,6.83,6.83,False,355,13759,7896116901385,12,feijao-fradinho-kicaldo-1kg-4473,https://mercadinhossaoluiz.com.br/produto/feijao-fradinho-kicaldo-1kg-4473
+feijao,FEIJÃO JALO KICALDO 1KG,15.78,15.78,False,355,13759,7896116900432,7,feijao-jalo-kicaldo-1kg,https://mercadinhossaoluiz.com.br/produto/feijao-jalo-kicaldo-1kg
+feijao,FEIJÃO RAJADO KICALDO 1KG,15.78,15.78,False,355,13759,7896116900425,7,feijao-rajado-kicaldo-1kg,https://mercadinhossaoluiz.com.br/produto/feijao-rajado-kicaldo-1kg
+feijao,FEIJÃO BRANCO BIJU 500G,7.21,7.21,False,355,13759,7893500005902,3,feijao-branco-biju-500g-94412,https://mercadinhossaoluiz.com.br/produto/feijao-branco-biju-500g-94412
+feijao,FEIJÃO PRETO PRONTO CAMIL 490G,11.32,11.32,False,355,13759,7896006712398,8,feijao-preto-camil-pronto-sem-tempero-490g,https://mercadinhossaoluiz.com.br/produto/feijao-preto-camil-pronto-sem-tempero-490g
+feijao,FEIJÃO CARIOCA DONA DÊ 1KG,8.94,8.94,False,355,13759,7898922012019,36,feijao-carioca-dona-de-pacote-1kg,https://mercadinhossaoluiz.com.br/produto/feijao-carioca-dona-de-pacote-1kg
+feijao,FEIJAO MULATINHO COMBRASIL 500G,10.42,10.42,False,355,13759,7896101062572,15,feijao-mulatinho-combrasil-500g,https://mercadinhossaoluiz.com.br/produto/feijao-mulatinho-combrasil-500g
+feijao,FEIJÃO BRANCO KICALDO 1KG,17.78,17.78,False,355,13759,7896116900807,8,feijao-branco-kicaldo-1kg-111494,https://mercadinhossaoluiz.com.br/produto/feijao-branco-kicaldo-1kg-111494
+feijao,FEIJÃO VERMELHO KICALDO 1KG,16.83,16.83,False,355,13759,7896116900845,9,feijao-vermelho-kicaldo-1kg,https://mercadinhossaoluiz.com.br/produto/feijao-vermelho-kicaldo-1kg
+feijao,FEIJAO VERMELHO COMBRASIL TIPO 1 500G,8.32,8.32,False,355,13759,7896101062596,7,feijao-vermelho-combrasil-tipo-1-500g,https://mercadinhossaoluiz.com.br/produto/feijao-vermelho-combrasil-tipo-1-500g
+feijao,FEIJÃO VERDE FAZENDA GRANGEIRO 500G,13.67,13.67,False,355,13759,7898994973300,37,feijao-verde-fazenda-grangeiro-500g,https://mercadinhossaoluiz.com.br/produto/feijao-verde-fazenda-grangeiro-500g
+feijao,FEIJÃO CARIOCA T1 COMBRASIL PACOTE 1KG,14.63,14.63,False,355,13759,7896101062022,5,feijao-carioca-t1-combrasil-pacote-1kg,https://mercadinhossaoluiz.com.br/produto/feijao-carioca-t1-combrasil-pacote-1kg
+acucar,ADOÇANTE LÍQUIDO ZERO CAL SACARINA 100ML,8.41,8.41,False,355,13760,7896094910904,5,adocante-liquido-com-sacarina-zero-cal-100ml,https://mercadinhossaoluiz.com.br/produto/adocante-liquido-com-sacarina-zero-cal-100ml
+acucar,AÇÚCAR CRISTAL OLHO D`AGUA 1KG,3.67,3.67,False,355,13760,7898994678014,158,acucar-cristal-olho-dagua-1kg-93921,https://mercadinhossaoluiz.com.br/produto/acucar-cristal-olho-dagua-1kg-93921
+acucar,ADOÇANTE LÍQUIDO ZERO CAL SACARINA 200ML,13.67,13.67,False,355,13760,7896094910959,3,adocante-zero-cal-200ml,https://mercadinhossaoluiz.com.br/produto/adocante-zero-cal-200ml
+acucar,AÇÚCAR UNIÃO GLAÇÚCAR 500G,4.89,4.89,False,355,13760,7891910007110,11,acucar-glacucar-uniao-500g,https://mercadinhossaoluiz.com.br/produto/acucar-glacucar-uniao-500g
+acucar,AÇÚCAR DEMERARA UNIÃO 1KG,6.2,6.2,False,355,13760,7891910030101,19,acucar-demerara-uniao-pacote-1kg,https://mercadinhossaoluiz.com.br/produto/acucar-demerara-uniao-pacote-1kg
+acucar,ADOÇANTE LÍQUIDO LINEA 75ML,19.25,19.25,False,355,13760,7896001250628,5,adocante-liquido-linea-75ml,https://mercadinhossaoluiz.com.br/produto/adocante-liquido-linea-75ml
+acucar,ADOÇANTE MAGRO C/ STÉVIA 80ML,9.46,9.46,False,355,13760,7896292010000,7,adocante-magro-com-stevia-80ml,https://mercadinhossaoluiz.com.br/produto/adocante-magro-com-stevia-80ml
+acucar,ADOÇANTE SVILI STÉVIA EXTRA 90ML,10.62,10.62,False,355,13760,7897670700452,15,adocante-stevia-svili-excellent-90ml,https://mercadinhossaoluiz.com.br/produto/adocante-stevia-svili-excellent-90ml
+acucar,ADOÇANTE EM PÓ LINEA STÉVIA 30G,17.0,17.0,False,355,13760,7896001210110,2,adocante-em-po-stevia-linea-30g,https://mercadinhossaoluiz.com.br/produto/adocante-em-po-stevia-linea-30g
+acucar,ADOÇANTE LÍQUIDO LINEA STÉVIA 60ML,17.84,17.84,False,355,13760,7896001210103,2,adocante-linea-stevia-60ml,https://mercadinhossaoluiz.com.br/produto/adocante-linea-stevia-60ml
+acucar,AÇÚCAR CRISTAL UNIÃO ORGÂNICO 1KG,8.79,8.79,False,355,13760,7891910020034,4,acucar-cristal-uniao-organico-1kg,https://mercadinhossaoluiz.com.br/produto/acucar-cristal-uniao-organico-1kg
+acucar,AÇÚCAR DEMERARA UNIÃO NATURALE 1KG,7.53,7.53,False,355,13760,7891910020065,9,acucar-naturale-demerara-uniao-1kg,https://mercadinhossaoluiz.com.br/produto/acucar-naturale-demerara-uniao-1kg
+acucar,FRUTOSE LOWÇUCAR 200G,23.05,23.05,False,355,13760,7896292000131,2,adocante-frutose-lowcucar-200g,https://mercadinhossaoluiz.com.br/produto/adocante-frutose-lowcucar-200g
+acucar,ADOÇANTE LÍQUIDO SUCRALOSE ZERO CAL 100ML,15.78,15.78,False,355,13760,7896094906624,8,adocante-liquido-sucralose-zero-cal-100ml,https://mercadinhossaoluiz.com.br/produto/adocante-liquido-sucralose-zero-cal-100ml
+acucar,ADOÇANTE MAGRO C/ SUCRALOSE 80ML,11.11,11.11,False,355,13760,7896292001497,7,adocante-magro-com-sucralose-80ml,https://mercadinhossaoluiz.com.br/produto/adocante-magro-com-sucralose-80ml
+acucar,IOGURTE VERDE CAMPO LACFREE ZERO LACTOSE NATURAL 500G,9.85,9.85,False,355,13760,7898205923988,1,iogurte-lactose-free-sem-adocante-500g,https://mercadinhossaoluiz.com.br/produto/iogurte-lactose-free-sem-adocante-500g
+acucar,AÇÚCAR DEMERARA PRECIOSO 1KG,6.31,6.31,False,355,13760,7898926342105,14,acucar-demerara-precioso-1kg,https://mercadinhossaoluiz.com.br/produto/acucar-demerara-precioso-1kg
+acucar,AÇÚCAR DEMERARA OLHO D`ÁGUA 1KG,5.25,5.25,False,355,13760,7896725201012,73,acucar-demerara-olho-dagua-1kg-93922,https://mercadinhossaoluiz.com.br/produto/acucar-demerara-olho-dagua-1kg-93922
+acucar,AÇÚCAR MASCAVO ÁSTER 1KG,12.52,12.52,False,355,13760,7898961803012,2,acucar-aster-mascavo-sache-1kg,https://mercadinhossaoluiz.com.br/produto/acucar-aster-mascavo-sache-1kg
+acucar,ADOÇANTE LÍNEA XILITOL POUCH 300G,51.78,51.78,False,355,13760,7896001215238,2,adocante-linea-xilitol-pouch-300g,https://mercadinhossaoluiz.com.br/produto/adocante-linea-xilitol-pouch-300g
+acucar,AÇÚCAR MASCAVO UNIÃO PACOTE 1KG,23.25,23.25,False,355,13760,7891910030293,7,acucar-mascavo-uniao-pacote-1kg,https://mercadinhossaoluiz.com.br/produto/acucar-mascavo-uniao-pacote-1kg
+acucar,ADOÇANTE SVILI STÉVIA PURA 90ML,27.42,27.42,False,355,13760,7897670701749,4,adocante-stevia-pura-90ml,https://mercadinhossaoluiz.com.br/produto/adocante-stevia-pura-90ml
+acucar,AÇÚCAR MASCAVO PRECIOSO 1KG,10.42,10.42,False,355,13760,7898926342532,10,acucar-mascavo-1kg-precioso,https://mercadinhossaoluiz.com.br/produto/acucar-mascavo-1kg-precioso
+acucar,ADOÇANTE ZERO CAL LÍQUIDO ERITRITOL 65ML,18.94,18.94,False,355,13760,7896094919136,3,adocante-zero-cal-eritritol-zero-gluten-65m,https://mercadinhossaoluiz.com.br/produto/adocante-zero-cal-eritritol-zero-gluten-65m
+acucar,ADOCANTE STEVIA 100% NATURAL ANDINA 20G,63.75,63.75,False,355,13760,735201110226,4,adocante-stevia-100-natural-andina-40g-246702,https://mercadinhossaoluiz.com.br/produto/adocante-stevia-100-natural-andina-40g-246702
+acucar,ADOÇANTE EM PÓ LINEA ERITRITOL 300G,55.57,55.57,False,355,13760,7896001200012,4,adocante-em-po-linea-eritritol-300g,https://mercadinhossaoluiz.com.br/produto/adocante-em-po-linea-eritritol-300g
+acucar,AÇÚCAR DEMERARA ASTER 1KG,6.73,6.73,False,355,13760,7898961803050,12,acucar-demerara-aster-1kg-148577,https://mercadinhossaoluiz.com.br/produto/acucar-demerara-aster-1kg-148577
+acucar,ADOÇANTE ZERO CAL STÉVIA COM SUCRALOSE LÍQUIDO 80ML,15.78,15.78,False,355,13760,7896094915046,1,adocante-liquido-zero-cal-stevia-80ml-98356,https://mercadinhossaoluiz.com.br/produto/adocante-liquido-zero-cal-stevia-80ml-98356
+acucar,ADOCANTE ZERO CAL STEVIA COM 2 UNIDADES 50% DESCONTO NA 2 UNIDADE,23.15,23.15,False,355,13760,7896094919129,3,adocante-zero-cal-stevia-com-2-unidades-50-desconto-na-2-unidade,https://mercadinhossaoluiz.com.br/produto/adocante-zero-cal-stevia-com-2-unidades-50-desconto-na-2-unidade
+acucar,ADOCANTE DIETETICO EM PO LINEA COM 50 ENVELOPES,15.78,15.78,False,355,13760,7896001250710,4,adocante-dietetico-em-po-linea-com-50-envelopes,https://mercadinhossaoluiz.com.br/produto/adocante-dietetico-em-po-linea-com-50-envelopes
+acucar,ADOCANTE LIQ MAGRO 60ML 100% STEVIA,18.16,18.16,False,355,13760,7896292005792,10,adocante-liq-magro-60ml-100-stevia,https://mercadinhossaoluiz.com.br/produto/adocante-liq-magro-60ml-100-stevia
+acucar,ADOCANTE LIQUIDO LINEA 75ML DIET 50% DESCONTO NA 2 UNIDADE,29.95,29.95,False,355,13760,7896001282421,7,adocante-liquido-linea-75ml-diet-50-desconto-na-2-unidade,https://mercadinhossaoluiz.com.br/produto/adocante-liquido-linea-75ml-diet-50-desconto-na-2-unidade
+acucar,ADOCANTE STEVIA SEM SABOR AMARGO 30ML COLOR ANDINA,27.15,27.15,False,355,13760,619205643778,5,,https://mercadinhossaoluiz.com.br/produto/None
+acucar,ADOCANTE LIQUIDO GOLD STEVIA 100% 65ML,13.09,13.09,False,355,13760,7896569406253,1,adocante-liquido-gold-stevia-100-65ml,https://mercadinhossaoluiz.com.br/produto/adocante-liquido-gold-stevia-100-65ml
+acucar,ACUCAR GRANELLI PCT 1KG MASCAVO,14.26,14.26,False,355,13760,7898996012243,12,,https://mercadinhossaoluiz.com.br/produto/None
+acucar,ACUCAR GRANELLI MASCAVO 500G ~,8.09,8.09,False,355,13760,7898996012250,15,,https://mercadinhossaoluiz.com.br/produto/None
+acucar,ADOCANTE LIQUIDO GOLD STEVIA 65ML,13.78,13.78,False,355,13760,7896261405448,1,,https://mercadinhossaoluiz.com.br/produto/None
+oleo,MOLHO DE TOMATE POMAROLA RECEITAS BOLONHESA 300G,9.15,9.15,False,355,13799,7896036095126,22,pomarola-bolonhesa-sache-300g,https://mercadinhossaoluiz.com.br/produto/pomarola-bolonhesa-sache-300g
+oleo,COLORÍFICO DONA CLARA 100G,1.36,1.36,False,355,13799,7896490288898,128,colorau-colorifico-dona-clara-100g,https://mercadinhossaoluiz.com.br/produto/colorau-colorifico-dona-clara-100g
+oleo,MOLHO DE PIMENTA TABASCO BRAND PEPPER 60ML,30.52,30.52,False,355,13799,11210115606,3,molho-americano-tabasco-red-pepper-60ml,https://mercadinhossaoluiz.com.br/produto/molho-americano-tabasco-red-pepper-60ml
+oleo,TEMPERO SAZÓN CARNE 60G,6.37,6.37,False,355,13799,7891132019281,12,tempero-sazon-carne-floppy-60g,https://mercadinhossaoluiz.com.br/produto/tempero-sazon-carne-floppy-60g
+oleo,TEMPERO SAZÓN AVES 60G,6.37,6.37,False,355,13799,7891132019274,7,tempero-para-frango-sazon-60g,https://mercadinhossaoluiz.com.br/produto/tempero-para-frango-sazon-60g
+oleo,TEMPERO SAZÓN LEGUMES 60G,6.37,6.37,False,355,13799,7891132019403,16,tempero-para-legumes-sazon-pacote-60g,https://mercadinhossaoluiz.com.br/produto/tempero-para-legumes-sazon-pacote-60g
+oleo,TEMPERO SABOR AMI SEM PIMENTA 300G,6.47,6.47,False,355,13799,7891132019038,1,sabor-a-mi-s-p-24-pote-x-300-gr,https://mercadinhossaoluiz.com.br/produto/sabor-a-mi-s-p-24-pote-x-300-gr
+oleo,TEMPERO SABOR AMI COM PIMENTA 300G,6.47,6.47,False,355,13799,7891132019045,10,sabor-a-mi-c-p-24-pote-x-300-gr,https://mercadinhossaoluiz.com.br/produto/sabor-a-mi-c-p-24-pote-x-300-gr
+oleo,TEMPERO SABOR AMI ALHO E SAL 300G,6.47,6.47,False,355,13799,7891132019021,3,sabor-a-mi-a-s-24-pote-x-300-gr,https://mercadinhossaoluiz.com.br/produto/sabor-a-mi-a-s-24-pote-x-300-gr
+oleo,REALÇADOR DE SABOR AJI-NO-MOTO REFIL 100G,8.52,8.52,False,355,13799,7891132012015,2,aji-no-moto-36-refil-x-100-gr,https://mercadinhossaoluiz.com.br/produto/aji-no-moto-36-refil-x-100-gr
+oleo,TEMPERO SAZÓN MASSAS 60G,6.37,6.37,False,355,13799,7891132019717,4,tempero-sazon-massas-flopy-60g,https://mercadinhossaoluiz.com.br/produto/tempero-sazon-massas-flopy-60g
+oleo,TEMPERO SAZÓN FEIJÃO 60G,6.37,6.37,False,355,13799,7891132019724,5,sazon-marrom-48x12x5g,https://mercadinhossaoluiz.com.br/produto/sazon-marrom-48x12x5g
+oleo,REALÇADOR DE SABOR AJI-SAL 100G,8.89,8.89,False,355,13799,7891132082018,2,aji-sal-36-frasco-x-100-gr,https://mercadinhossaoluiz.com.br/produto/aji-sal-36-frasco-x-100-gr
+oleo,TEMPERO GRILL MAGGI 120G,12.41,12.41,False,355,13799,7891000502204,8,tempero-gril-maggi-120g,https://mercadinhossaoluiz.com.br/produto/tempero-gril-maggi-120g
+oleo,TEMPERO FONDOR MAGGI 120G,12.41,12.41,False,355,13799,7891000502105,3,tempero-fondor-maggi-120g,https://mercadinhossaoluiz.com.br/produto/tempero-fondor-maggi-120g
+oleo,MOLHO INGLÊS MINHOTO 150ML,9.42,9.42,False,355,13799,7896013101697,9,molho-ingles-minhoto-150ml,https://mercadinhossaoluiz.com.br/produto/molho-ingles-minhoto-150ml
+oleo,PIMENTA BRANCA ISHASHI EM PÓ 40G,8.2,8.2,False,355,13799,7896244830137,6,pimenta-branca-ishashi-40g,https://mercadinhossaoluiz.com.br/produto/pimenta-branca-ishashi-40g
+oleo,CURRY ISHASHI 30G,6.73,6.73,False,355,13799,7896244830182,17,curry-ishashi-30g,https://mercadinhossaoluiz.com.br/produto/curry-ishashi-30g
+oleo,PIMENTA DO REINO ISHASHI EM PÓ 40G,8.58,8.58,False,355,13799,7896244830090,11,pimenta-do-reino-ishashi-em-po-40g,https://mercadinhossaoluiz.com.br/produto/pimenta-do-reino-ishashi-em-po-40g
+oleo,PIMENTA DO REINO ISHASHI EM GRÃO 40G,7.99,7.99,False,355,13799,7896244830144,15,pimenta-ishashi-grao-40g,https://mercadinhossaoluiz.com.br/produto/pimenta-ishashi-grao-40g
+oleo,ORÉGANO ISHASHI 10G,6.09,6.09,False,355,13799,7896244830076,42,oregano-ishashi-10g,https://mercadinhossaoluiz.com.br/produto/oregano-ishashi-10g
+oleo,FOLHA DE LOURO ISHASHI 5G,6.37,6.37,False,355,13799,7896244830052,21,louro-folha-ishashi-5g,https://mercadinhossaoluiz.com.br/produto/louro-folha-ishashi-5g
+oleo,COMINHO ISHASHI EM PÓ 40G,7.36,7.36,False,355,13799,7896244830014,12,cominho-ishashi-em-po-40g,https://mercadinhossaoluiz.com.br/produto/cominho-ishashi-em-po-40g
+oleo,CRAVO ISHASHI 20G,8.37,8.37,False,355,13799,7896244830038,11,cravo-da-india-ishashi-20g,https://mercadinhossaoluiz.com.br/produto/cravo-da-india-ishashi-20g
+oleo,CANELA EM PÓ ISHASHI 40G,9.0,9.0,False,355,13799,7896244810030,22,canela-ishashi-po-40g,https://mercadinhossaoluiz.com.br/produto/canela-ishashi-po-40g
+oleo,BICARBONATO DE SÓDIO ISHASHI 50G,6.09,6.09,False,355,13799,7896244810122,19,bicarbonato-sodio-ishashi-50g,https://mercadinhossaoluiz.com.br/produto/bicarbonato-sodio-ishashi-50g
+oleo,MOLHO DE PIMENTA KNORR 150ML,10.2,10.2,False,355,13799,7891234000187,12,molho-de-pimenta-knorr-tradicional-150ml,https://mercadinhossaoluiz.com.br/produto/molho-de-pimenta-knorr-tradicional-150ml
+oleo,TEMPERO COMPLETO ARISCO SEM PIMENTA 300G,9.46,9.46,False,355,13799,7891700011204,10,tempero-completo-arisco-sem-pimenta-300g,https://mercadinhossaoluiz.com.br/produto/tempero-completo-arisco-sem-pimenta-300g
+oleo,MAIONESE HELLMANN`S TRADICIONAL POTE 250G,11.46,11.46,False,355,13799,7894000050027,35,maionese-hellmanns-tradicional-250g,https://mercadinhossaoluiz.com.br/produto/maionese-hellmanns-tradicional-250g
+oleo,MAIONESE HELLMANN`S 500G,22.58,22.58,False,355,13799,7894000050034,63,maionese-hellmanns-tradicional-500g,https://mercadinhossaoluiz.com.br/produto/maionese-hellmanns-tradicional-500g
+oleo,MAIONESE HELLMANN`S LIGHT 500G,22.58,22.58,False,355,13799,7894000050720,6,maionese-hellmanns-light-500g,https://mercadinhossaoluiz.com.br/produto/maionese-hellmanns-light-500g
+oleo,REALÇADOR DE SABOR AJI-NO-MOTO 36G,4.31,4.31,False,355,13799,7891132010080,1,aji-no-moto-48-floppy-x-36-gr,https://mercadinhossaoluiz.com.br/produto/aji-no-moto-48-floppy-x-36-gr
+oleo,MOLHO SAKURA MOLHEIRA PREMIUM 150ML,15.63,15.63,False,355,13799,7896007810017,3,molho-sakura-molheira-premium-150ml,https://mercadinhossaoluiz.com.br/produto/molho-sakura-molheira-premium-150ml
+oleo,MOLHO DE SOJA SAKURA LIGHT 150ML        ,15.63,15.63,False,355,13799,7896007810123,1,molho-de-soja-sakura-light-150ml,https://mercadinhossaoluiz.com.br/produto/molho-de-soja-sakura-light-150ml
+oleo,MOSTARDA DIJON GREY POUPON AU VIN WHITE 215G,44.11,44.11,False,355,13799,3036810100576,1,mostarda-dijon-grey-white-215g,https://mercadinhossaoluiz.com.br/produto/mostarda-dijon-grey-white-215g
+oleo,MOSTARDA GREY POUPON AL`ANCIENNE 210G,44.11,44.11,False,355,13799,3036810107025,1,mostarda-fra-grey-poupon-old-style-210g,https://mercadinhossaoluiz.com.br/produto/mostarda-fra-grey-poupon-old-style-210g
+oleo,ÓLEO DE SOJA SOYA 900ML,9.46,9.46,False,355,13799,7891107101621,52,oleo-de-soja-900ml-313,https://mercadinhossaoluiz.com.br/produto/oleo-de-soja-900ml-313
+oleo,MOLHO DE TOMATE POMAROLA TRADICIONAL CAIXA 260G,6.09,6.09,False,355,13799,7896036095096,7,molho-de-tomate-pomarola-tetra-pak-260g,https://mercadinhossaoluiz.com.br/produto/molho-de-tomate-pomarola-tetra-pak-260g
+oleo,MOLHO SHOYU SAKURA TRADICIONAL 150ML,5.36,5.36,False,355,13799,7896007811007,52,molho-sakura-tradicional-150ml,https://mercadinhossaoluiz.com.br/produto/molho-sakura-tradicional-150ml
+oleo,CALDO KNORR GALINHA 57G 6 CUBOS,2.62,2.62,False,355,13799,7894000000275,59,caldo-knorr-galinha-57g-6-cubos,https://mercadinhossaoluiz.com.br/produto/caldo-knorr-galinha-57g-6-cubos
+oleo,CALDO KNORR CARNE 6 CUBOS,2.62,2.62,False,355,13799,7891150012318,57,caldo-knorr-carne-6-cubos,https://mercadinhossaoluiz.com.br/produto/caldo-knorr-carne-6-cubos
+oleo,TEMPERO SAZÓN SALADAS 60G,6.37,6.37,False,355,13799,7891132019731,2,tempero-sazon-salada-floppy,https://mercadinhossaoluiz.com.br/produto/tempero-sazon-salada-floppy
+oleo,TEMPERO EM PASTA RECEITA DE CASA CASEIRO 450G,14.73,14.73,False,355,13799,7891132000012,5,receita-de-casa-classico-20-x-450-gr,https://mercadinhossaoluiz.com.br/produto/receita-de-casa-classico-20-x-450-gr
+oleo,TEMPERO EM PASTA RECEITA DE CASA COM PIMENTA 450G,14.73,14.73,False,355,13799,7891132000029,5,receita-de-casa-c-pim-20-x-450-gr,https://mercadinhossaoluiz.com.br/produto/receita-de-casa-c-pim-20-x-450-gr
+oleo,AZEITE EXTRA VIRGEM GALLO 500ML,29.9,42.0,True,355,13799,5601252231164,108,azeite-extra-virgem-gallo-vidro-500ml,https://mercadinhossaoluiz.com.br/produto/azeite-extra-virgem-gallo-vidro-500ml
+oleo,AÇAFRÃO ISHASHI EM PÓ 35G,6.37,6.37,False,355,13799,7896244830199,16,acafrao-ishashi-po-35g,https://mercadinhossaoluiz.com.br/produto/acafrao-ishashi-po-35g
+oleo,ALECRIM ISHASHI 15G,5.42,5.42,False,355,13799,7896244830205,15,alecrim-ishashi-10g,https://mercadinhossaoluiz.com.br/produto/alecrim-ishashi-10g
+oleo,LOURO ISHASHI EM PÓ 30G,6.58,6.58,False,355,13799,7896244830229,12,louro-em-po-ishashi-30g,https://mercadinhossaoluiz.com.br/produto/louro-em-po-ishashi-30g
+oleo,MANJERICÃO ISHASHI 10G,6.09,6.09,False,355,13799,7896244830236,8,manjericao-ishashi-10g,https://mercadinhossaoluiz.com.br/produto/manjericao-ishashi-10g
+oleo,SALSA ISHASHI 8G,5.42,5.42,False,355,13799,7896244830250,13,salsa-desidratada-ishashi-8g,https://mercadinhossaoluiz.com.br/produto/salsa-desidratada-ishashi-8g
+oleo,PIMENTA ISHASHI COM COMINHO 40G,7.57,7.57,False,355,13799,7896244830267,12,pimenta-ishashi-com-cominho-moida-40g,https://mercadinhossaoluiz.com.br/produto/pimenta-ishashi-com-cominho-moida-40g
+oleo,ÓLEO DE MILHO LIZA 900ML,20.95,20.95,False,355,13799,7896036090619,57,oleo-de-milho-liza-900ml,https://mercadinhossaoluiz.com.br/produto/oleo-de-milho-liza-900ml
+oleo,MAIONESE HELLMANN`S TRADICIONAL EMBAL. ECONÔMICA SACHÊ 200G,7.53,7.53,False,355,13799,7894000030470,24,maionese-hellmanns-sache-200g,https://mercadinhossaoluiz.com.br/produto/maionese-hellmanns-sache-200g
+oleo,MAIONESE ARISCO SACHÊ 196G,4.2,4.2,False,355,13799,7891700206952,21,maionese-arisco-196g,https://mercadinhossaoluiz.com.br/produto/maionese-arisco-196g
+oleo,NOZ MOSCADA ISHASHI 30G,8.94,8.94,False,355,13799,7896244830274,5,noz-moscada-ishashi-30g-100872,https://mercadinhossaoluiz.com.br/produto/noz-moscada-ishashi-30g-100872
+oleo,ERVAS FINAS ISHASHI 15G,5.32,5.32,False,355,13799,7896244830281,21,tempero-ishashi-15g-ervas-finas,https://mercadinhossaoluiz.com.br/produto/tempero-ishashi-15g-ervas-finas
+oleo,MOLHO INGLÊS KENKO 150ML,5.67,5.67,False,355,13799,7896007811403,14,molho-ingles-kenko-150ml-364,https://mercadinhossaoluiz.com.br/produto/molho-ingles-kenko-150ml-364
+oleo,MOLHO DE PIMENTA KENKO 150ML,5.67,5.67,False,355,13799,7896007811304,10,molho-pimenta-kenko-150ml,https://mercadinhossaoluiz.com.br/produto/molho-pimenta-kenko-150ml
+oleo,MOLHO DE TOMATE POMAROLA TRADICIONAL CAIXA 520G,9.46,9.46,False,355,13799,7896036095102,9,pomarola-tradicional-520g-tp-106845,https://mercadinhossaoluiz.com.br/produto/pomarola-tradicional-520g-tp-106845
+oleo,CALDO KNORR CARNE 12 CUBOS,4.41,4.41,False,355,13799,7891150012363,15,caldo-knorr-carne-12-cubos,https://mercadinhossaoluiz.com.br/produto/caldo-knorr-carne-12-cubos
+oleo,ALFAVACA SEMPRE VERDE UND,4.41,4.41,False,355,13799,7898259990479,11,alfavaca-sempre-verde-und,https://mercadinhossaoluiz.com.br/produto/alfavaca-sempre-verde-und
+oleo,BOLDO SEMPRE VERDE UND,4.41,4.41,False,355,13799,7898259990486,4,boldo-sempre-verde-und,https://mercadinhossaoluiz.com.br/produto/boldo-sempre-verde-und
+oleo,CORAMA SEMPRE VERDE UND,4.41,4.41,False,355,13799,7898259990462,4,corama-sempre-verde-und,https://mercadinhossaoluiz.com.br/produto/corama-sempre-verde-und
+oleo,MALVA SEMPRE VERDE UND,4.41,4.41,False,355,13799,7898259990455,1,malva-sempre-verde-und,https://mercadinhossaoluiz.com.br/produto/malva-sempre-verde-und
+oleo,MASTRUZ SEMPRE VERDE UND,4.41,4.41,False,355,13799,7898259990424,3,mastruz-sempre-verde-und,https://mercadinhossaoluiz.com.br/produto/mastruz-sempre-verde-und
+oleo,COLORÍFICO KIMIMO S/SAL 100G,1.36,1.36,False,355,13799,7896490288874,126,colorau-colorifico-kimimo-100g,https://mercadinhossaoluiz.com.br/produto/colorau-colorifico-kimimo-100g
+oleo,TEMPERO COMPLETO MAGGI MEU SEGREDO VEGETAIS 49G,4.37,4.37,False,355,13799,7891000006689,10,tempero-meu-segredo-maggi-49g-382,https://mercadinhossaoluiz.com.br/produto/tempero-meu-segredo-maggi-49g-382
+oleo,LEITE DE COCO SOCOCO TRADICIONAL CAIXA 200ML,11.95,11.95,False,355,13799,7896004400372,6,leite-coco-sococo-tp-200ml,https://mercadinhossaoluiz.com.br/produto/leite-coco-sococo-tp-200ml
+oleo,TEMPERO COMPLETO ARISCO COM PIMENTA 300G,9.46,9.46,False,355,13799,7891700011006,12,tempero-completo-arisco-com-pimenta-300g,https://mercadinhossaoluiz.com.br/produto/tempero-completo-arisco-com-pimenta-300g
+oleo,TEMPERO SAZÓN ARROZ 60G,6.37,6.37,False,355,13799,7891132000449,1,tempero-sazon-arroz-floppy-60g,https://mercadinhossaoluiz.com.br/produto/tempero-sazon-arroz-floppy-60g
+oleo,TEMPERO ORIENTAL HONDASHI 60G,15.95,15.95,False,355,13799,7891132040018,3,hondashi-48x6x10g,https://mercadinhossaoluiz.com.br/produto/hondashi-48x6x10g
+oleo,AZEITE OLIVA PAGANINI  EXTRA VIRGEM 250ML,58.52,58.52,False,355,13799,7898152990019,2,azeite-oliva-paganini-extra-virgem-250ml,https://mercadinhossaoluiz.com.br/produto/azeite-oliva-paganini-extra-virgem-250ml
+oleo,ACETO BALSAMICO PAGANINI 500ML,36.2,36.2,False,355,13799,7898152990392,4,aceto-balsamico-paganini-500ml,https://mercadinhossaoluiz.com.br/produto/aceto-balsamico-paganini-500ml
+oleo,AZEITE EXTRA VIRGEM ANDORINHA 500ML,42.0,42.0,False,355,13799,5601216120152,51,azeite-de-oliva-andorinha-extra-virgem-500ml,https://mercadinhossaoluiz.com.br/produto/azeite-de-oliva-andorinha-extra-virgem-500ml
+oleo,TEMPERO BR SPICES LEMON PEPPER 100G,20.95,20.95,False,355,13799,7898946900071,3,lemon-pepper-100g-pote-br-spices,https://mercadinhossaoluiz.com.br/produto/lemon-pepper-100g-pote-br-spices
+oleo,POLPA DE TOMATE PAGANINI TRADICIONAL 690G,27.36,27.36,False,355,13799,7898152990040,9,polpa-tom-paganini-690g,https://mercadinhossaoluiz.com.br/produto/polpa-tom-paganini-690g
+oleo,POLPA DE TOMATE PAGANINI CEBOLA E MANJERICÃO 690G,31.15,31.15,False,355,13799,7898152990057,8,polpa-de-tomate-com-manjericao-paganin-690g,https://mercadinhossaoluiz.com.br/produto/polpa-de-tomate-com-manjericao-paganin-690g
+oleo,ÓLEO DE CANOLA LIZA 900ML,20.95,20.95,False,355,13799,7896036090626,11,oleo-canola-liza-900ml,https://mercadinhossaoluiz.com.br/produto/oleo-canola-liza-900ml
+oleo,KETCHUP MRS TASTE ZERO CALORIAS 350G,27.36,27.36,False,355,13799,7896573360343,3,ketchup-mrs-taste-350g-zero-sodio-e-zero-acucar,https://mercadinhossaoluiz.com.br/produto/ketchup-mrs-taste-350g-zero-sodio-e-zero-acucar
+oleo,MOSTARDA MRS TASTE ZERO CALORIAS 350G,29.21,29.21,False,355,13799,7896573360350,5,mostarda-zero-mrs-taste-350g,https://mercadinhossaoluiz.com.br/produto/mostarda-zero-mrs-taste-350g
+oleo,MOLHO P/ SALADA MRS TASTE ZERO SÓDIO ITALIANO 300ML,29.53,29.53,False,355,13799,7896573360329,3,molho-p-salada-italiano-mr-taste-300m,https://mercadinhossaoluiz.com.br/produto/molho-p-salada-italiano-mr-taste-300m
+oleo,MOLHO DE PIMENTA MENDEZ CHIPOTLE 80ML,20.73,20.73,False,355,13799,7898943849144,8,molho-pim-crem-def-mendez-80ml,https://mercadinhossaoluiz.com.br/produto/molho-pim-crem-def-mendez-80ml
+oleo,GENGIBRE ISHASHI 30G,7.21,7.21,False,355,13799,7896244830298,16,gengibre-ishashi-30g,https://mercadinhossaoluiz.com.br/produto/gengibre-ishashi-30g
+oleo,TOMILHO ISHASHI 15G,5.42,5.42,False,355,13799,7896244830304,9,tomilho-ishashi-folhas-desidratadas-pote-15g,https://mercadinhossaoluiz.com.br/produto/tomilho-ishashi-folhas-desidratadas-pote-15g
+oleo,PIMENTA CALABRESA ISHASHI 20G,7.0,7.0,False,355,13799,7896244830120,23,pimenta-ishashi-calabreza-15g,https://mercadinhossaoluiz.com.br/produto/pimenta-ishashi-calabreza-15g
+oleo,PIM.GALLO 50ML,25.25,25.25,False,355,13799,5601252111602,1,pim-gallo-50ml,https://mercadinhossaoluiz.com.br/produto/pim-gallo-50ml
+oleo,POLPA DE TOMATE PAGANINI RÚSTICA 690G,26.21,26.21,False,355,13799,7898152996929,14,polpa-de-tomate-rustica-paganini-690g,https://mercadinhossaoluiz.com.br/produto/polpa-de-tomate-rustica-paganini-690g
+oleo,MOLHO MRS TASTE ZERO CALORIAS BARBECUE 350G,35.42,35.42,False,355,13799,7896573360404,2,molho-barbecue-churrasco-350g-taste,https://mercadinhossaoluiz.com.br/produto/molho-barbecue-churrasco-350g-taste
+oleo,ÓLEO DE GIRASSOL MAZOLA 900ML,27.26,27.26,False,355,13799,7896036091425,8,oleo-mazola-girassol-900ml-71484,https://mercadinhossaoluiz.com.br/produto/oleo-mazola-girassol-900ml-71484
+oleo,MIX DE PIMENTAS BR SPICES 50G,24.11,24.11,False,355,13799,7898946900569,6,mix-de-pimentas-br-spices-com-moedor-50g,https://mercadinhossaoluiz.com.br/produto/mix-de-pimentas-br-spices-com-moedor-50g
+ovos,OVO VERMELHO AVINE EXTRA C/20 UNIDADES,19.46,19.46,False,355,13797,7896304100279,19,ovos-avine-vermelho-extra-com-20,https://mercadinhossaoluiz.com.br/produto/ovos-avine-vermelho-extra-com-20
+ovos,OVO BRANCO AVINE EXTRA C/20 UNIDADES,17.36,17.36,False,355,13797,7896304100064,11,ovos-avine-branco-extra-com-20,https://mercadinhossaoluiz.com.br/produto/ovos-avine-branco-extra-com-20
+ovos,OVOS AVINE BRANCO GRANDE BANDEJA COM 30 UNIDADES,24.31,24.31,False,355,13797,7896304100149,12,ovos-avine-branco-grande-bandeja-com-30-unidades,https://mercadinhossaoluiz.com.br/produto/ovos-avine-branco-grande-bandeja-com-30-unidades
+ovos,SOPA MAGGI CEBOLA PACOTE 68G,7.74,7.74,False,355,13797,7891000530603,10,sopa-maggi-cebola-68g-79138,https://mercadinhossaoluiz.com.br/produto/sopa-maggi-cebola-68g-79138
+ovos,SARDINHA GOMES DA COSTA MOLHO DE TOMATE 125G,7.32,7.32,False,355,13797,7891167021020,87,sardinha-gomes-da-costa-com-molho-de-tomate-125g,https://mercadinhossaoluiz.com.br/produto/sardinha-gomes-da-costa-com-molho-de-tomate-125g
+ovos,SARDINHA GOMES DA COSTA ÓLEO 125G,7.32,7.32,False,355,13797,7891167021013,124,sardinhas-com-oleo-gomes-da-costa-lata-125g,https://mercadinhossaoluiz.com.br/produto/sardinhas-com-oleo-gomes-da-costa-lata-125g
+ovos,ATUM COQUEIRO SÓLIDO EM ÓLEO 170G,16.41,16.41,False,355,13797,7896009301155,11,atum-coqueiro-solido-em-oleo-170g,https://mercadinhossaoluiz.com.br/produto/atum-coqueiro-solido-em-oleo-170g
+ovos,ATUM COQUEIRO RALADO 170G,12.94,12.94,False,355,13797,7896009301131,20,atum-coqueiro-170g-ralado,https://mercadinhossaoluiz.com.br/produto/atum-coqueiro-170g-ralado
+ovos,COCO RALADO SOCOCO 50G,7.11,7.11,False,355,13797,7896004400020,3,coco-ralado-sococo-50g,https://mercadinhossaoluiz.com.br/produto/coco-ralado-sococo-50g
+ovos,LEITE DE COCO SOCOCO INTEGRAL TRADICIONAL VIDRO 200ML,9.99,12.83,True,355,13797,7896004400075,111,leite-de-coco-sococo-200ml-359,https://mercadinhossaoluiz.com.br/produto/leite-de-coco-sococo-200ml-359
+ovos,LEITE DE COCO SOCOCO INTEGRAL TRADICIONAL VIDRO 500ML,33.0,33.0,False,355,13797,7896004400082,10,leite-de-coco-sococo-500ml,https://mercadinhossaoluiz.com.br/produto/leite-de-coco-sococo-500ml
+ovos,FEIJOADA BORDON 430G,15.25,15.25,False,355,13797,7896031224583,6,feijoada-bordon-lata-430g-269,https://mercadinhossaoluiz.com.br/produto/feijoada-bordon-lata-430g-269
+ovos,FIAMBRE BORDON 320G,13.74,13.74,False,355,13797,7896031225085,1,carne-lata-bordon-fiambre-320g,https://mercadinhossaoluiz.com.br/produto/carne-lata-bordon-fiambre-320g
+ovos,SALSICHA AO MOLHO BORDON 300G,10.58,10.58,False,355,13797,7898430869877,4,salsicha-molho-lata-bordon-300g,https://mercadinhossaoluiz.com.br/produto/salsicha-molho-lata-bordon-300g
+ovos,ATUM GOMES COSTA SÓLIDO EM ÓLEO 170G,13.25,13.25,False,355,13797,7891167011731,1,atum-solido-em-oleo-gomes-da-costa-170g,https://mercadinhossaoluiz.com.br/produto/atum-solido-em-oleo-gomes-da-costa-170g
+ovos,ATUM GOMES COSTA RALADO EM ÓLEO 170G,8.41,8.41,False,355,13797,7891167011748,4,atum-ralado-em-oleo-gomes-da-costa-170g,https://mercadinhossaoluiz.com.br/produto/atum-ralado-em-oleo-gomes-da-costa-170g
+ovos,FERMENTO QUÍMICO EM PÓ OETKER 100G,6.21,6.21,False,355,13797,7891048040003,22,fermento-dr-oetker-100g,https://mercadinhossaoluiz.com.br/produto/fermento-dr-oetker-100g
+ovos,SAL PARA CHURRASCO LEBRE 1KG,2.62,2.62,False,355,13797,7896110100814,18,sal-grosso-lebre-1kg,https://mercadinhossaoluiz.com.br/produto/sal-grosso-lebre-1kg
+ovos,MISTURA PARA BOLO DONA BENTA LARANJA 450G,8.37,8.37,False,355,13797,7896005272022,4,mistura-para-bolo-laranja-dona-benta-450g,https://mercadinhossaoluiz.com.br/produto/mistura-para-bolo-laranja-dona-benta-450g
+ovos,MISTURA PARA BOLO DONA BENTA FESTA 450G,8.37,8.37,False,355,13797,7896005272060,2,mistura-para-bolo-festa-dona-benta-450g,https://mercadinhossaoluiz.com.br/produto/mistura-para-bolo-festa-dona-benta-450g
+ovos,MISTURA PARA BOLO DONA BENTA BAUNILHA 450G,8.37,8.37,False,355,13797,7896005272107,1,mistura-para-bolo-dona-benta-baunilha-450g,https://mercadinhossaoluiz.com.br/produto/mistura-para-bolo-dona-benta-baunilha-450g
+ovos,OVO VERMELHO AVINE OMEGA 3 C/10 UNIDADES,10.2,10.2,False,355,13797,7896304100934,22,ovos-avine-vermelho-omega-3-com-10,https://mercadinhossaoluiz.com.br/produto/ovos-avine-vermelho-omega-3-com-10
+ovos,ATUM COQUEIRO LIGHT PEDAÇOS 170G,17.53,17.53,False,355,13797,7894321823508,23,atum-coqueiro-pedacos-naturais-light-170g,https://mercadinhossaoluiz.com.br/produto/atum-coqueiro-pedacos-naturais-light-170g
+ovos,FERMENTO BIOLÓGICO OETKER INSTANTÂNEO EM PÓ 10G,2.62,2.62,False,355,13797,7891048040065,16,fermento-biologico-dr-oetker-10g-14411,https://mercadinhossaoluiz.com.br/produto/fermento-biologico-dr-oetker-10g-14411
+ovos,LEITE DE COCO SOCOCO REDUZIDO TEOR CALÓRICO 200ML,10.26,10.26,False,355,13797,7896004400686,1,leite-de-coco-sococo-reduzido-teor-calorico-200ml,https://mercadinhossaoluiz.com.br/produto/leite-de-coco-sococo-reduzido-teor-calorico-200ml
+ovos,ATUM GOMES COSTA RALADO NATURAL 170G,8.41,8.41,False,355,13797,7891167011779,19,atum-ralado-gomes-da-costa-ao-natural-170g,https://mercadinhossaoluiz.com.br/produto/atum-ralado-gomes-da-costa-ao-natural-170g
+ovos,LEITE DE COCO SOCOCO LIGHT VIDRO 200ML,14.05,14.05,False,355,13797,7896004400136,3,leite-de-coco-sococo-light-200ml-2046,https://mercadinhossaoluiz.com.br/produto/leite-de-coco-sococo-light-200ml-2046
+ovos,FERMENTO QUÍMICO DONA BENTA TRADICIONAL EM PÓ 100G,5.21,5.21,False,355,13797,7896005279489,1,fermento-quimico-dona-benta-pacote-100g,https://mercadinhossaoluiz.com.br/produto/fermento-quimico-dona-benta-pacote-100g
+ovos,COCO RALADO SOCOCO SWEET ADOÇADO 100G,12.2,12.2,False,355,13797,7896004400327,4,coco-ralado-sococo-umido-adocado-100g,https://mercadinhossaoluiz.com.br/produto/coco-ralado-sococo-umido-adocado-100g
+ovos,SARDINHA GOMES DA COSTA LIMÃO 125G,7.32,7.32,False,355,13797,7891167021037,8,sardinha-gomes-da-costa-limao-125g-5085,https://mercadinhossaoluiz.com.br/produto/sardinha-gomes-da-costa-limao-125g-5085
+ovos,QUEIJO PARMESÃO RALADO FAIXA AZUL 100G,16.47,16.47,False,355,13797,7891999960108,33,queijo-ralado-faixa-azul-100g,https://mercadinhossaoluiz.com.br/produto/queijo-ralado-faixa-azul-100g
+ovos,COCO RALADO SOCOCO FLOCOCO PACOTE 100G,18.94,18.94,False,355,13797,7896004400341,2,coco-ralado-flococo-100g,https://mercadinhossaoluiz.com.br/produto/coco-ralado-flococo-100g
+ovos,OVO DE CODORNA AVINE C/30 UNIDADES,9.84,9.84,False,355,13797,7896304100996,15,ovo-de-codorna-30-unidades-avine,https://mercadinhossaoluiz.com.br/produto/ovo-de-codorna-30-unidades-avine
+ovos,FILÉ DE SARDINHA GOMES DA COSTA ÓLEO 125G,15.25,15.25,False,355,13797,7891167022010,32,file-sardinha-gomes-da-costa-oleo-125g,https://mercadinhossaoluiz.com.br/produto/file-sardinha-gomes-da-costa-oleo-125g
+ovos,FILÉ DE SARDINHA GOMES DA COSTA TOMATE 125G,15.25,15.25,False,355,13797,7891167022034,8,file-sardinha-gomes-da-costa-molho-tomate-125g,https://mercadinhossaoluiz.com.br/produto/file-sardinha-gomes-da-costa-molho-tomate-125g
+ovos,FILÉ DE SARDINHA GOMES DA COSTA LIMÃO 125G,15.25,15.25,False,355,13797,7891167022041,13,file-sardinha-gomes-da-costa-limao-125g,https://mercadinhossaoluiz.com.br/produto/file-sardinha-gomes-da-costa-limao-125g
+ovos,FILÉ DE SARDINHA GOMES DA COSTA PIMENTA 125G,15.25,15.25,False,355,13797,7891167022027,6,file-sardinha-gomes-da-costa-125g-pimenta,https://mercadinhossaoluiz.com.br/produto/file-sardinha-gomes-da-costa-125g-pimenta
+ovos,ATUM GOMES COSTA PEDAÇOS AO ÓLEO 170G,12.2,12.2,False,355,13797,7891167011717,21,atum-gomes-da-costa-pedacos-ao-oleo-170g,https://mercadinhossaoluiz.com.br/produto/atum-gomes-da-costa-pedacos-ao-oleo-170g
+ovos,SARDINHA GOMES DA COSTA DEFUMADO 125G,7.32,7.32,False,355,13797,7891167021105,21,sardinha-gomes-da-costa-oleo-defumado-125g,https://mercadinhossaoluiz.com.br/produto/sardinha-gomes-da-costa-oleo-defumado-125g
+ovos,ATUM GOMES COSTA RALADO DEFUMADO 170G,8.41,8.41,False,355,13797,7891167012103,11,atum-gomes-da-costa-ralado-temperado-170g-defumado,https://mercadinhossaoluiz.com.br/produto/atum-gomes-da-costa-ralado-temperado-170g-defumado
+ovos,PATÊ DE ATUM COQUEIRO AZEITONA 170G,9.9,14.31,True,355,13797,7896009301162,21,pate-de-atum-coqueiro-com-azeitona-verde-170g,https://mercadinhossaoluiz.com.br/produto/pate-de-atum-coqueiro-com-azeitona-verde-170g
+ovos,PATÊ DE ATUM COQUEIRO TRADICIONAL 170G,9.9,14.31,True,355,13797,7896009301193,31,pate-coqueiro-atum-tradicional-170g,https://mercadinhossaoluiz.com.br/produto/pate-coqueiro-atum-tradicional-170g
+ovos,OVO VERMELHO AVINE CHICO BENTO C/10 UNIDADES,10.31,10.31,False,355,13797,7896304100965,22,ovos-avine-chico-bento-vermelho-grande-com-10,https://mercadinhossaoluiz.com.br/produto/ovos-avine-chico-bento-vermelho-grande-com-10
+ovos,ATUM GOMES COSTA LIGHT PEDAÇOS NATURAIS 170G,12.2,12.2,False,355,13797,7891167011724,10,atum-gomes-da-costa-em-pedacos-ao-natural-170g,https://mercadinhossaoluiz.com.br/produto/atum-gomes-da-costa-em-pedacos-ao-natural-170g
+ovos,OVO BRANCO AVINE EXTRA C/30 UNIDADES,25.63,25.63,False,355,13797,7896304101016,74,ovos-avine-extra-branco-com-30-unidades,https://mercadinhossaoluiz.com.br/produto/ovos-avine-extra-branco-com-30-unidades
+ovos,ATUM COQUEIRO RALADO NATURAL 170G,12.94,12.94,False,355,13797,7896009301124,19,atum-coqueiro-ralado-ao-natural-la-170g,https://mercadinhossaoluiz.com.br/produto/atum-coqueiro-ralado-ao-natural-la-170g
+ovos,PATÊ DE ATUM COQUEIRO PIMENTA 170G,9.9,14.31,True,355,13797,7894321841038,24,pate-atum-coqueiro-toque-de-pimenta-170g,https://mercadinhossaoluiz.com.br/produto/pate-atum-coqueiro-toque-de-pimenta-170g
+ovos,FERMENTO BIOLÓGICO EM PÓ DONA BENTA FERMIX 10G,1.99,1.99,False,355,13797,7896005271964,59,fermento-biologico-10g-dona-benta-fermix,https://mercadinhossaoluiz.com.br/produto/fermento-biologico-10g-dona-benta-fermix
+ovos,SAL REFINADO LEBRE LIGHT 50% MENOS SÓDIO 500G,9.37,9.37,False,355,13797,7896110194264,1,sal-refinado-lebre-light-500g,https://mercadinhossaoluiz.com.br/produto/sal-refinado-lebre-light-500g
+ovos,SAL REFINADO LEBRE 1KG,2.41,2.41,False,355,13797,7896110100043,39,sal-refinado-lebre-1kg,https://mercadinhossaoluiz.com.br/produto/sal-refinado-lebre-1kg
+ovos,SARDINHA COQUEIRO MOLHO DE TOMATE 125G,6.05,6.05,False,355,13797,7894321811789,117,sardinha-coqueiro-com-molho-tomate-125g,https://mercadinhossaoluiz.com.br/produto/sardinha-coqueiro-com-molho-tomate-125g
+ovos,ATUM GOMES COSTA RALADO MOLHO DE TOMATE 170G,8.41,8.41,False,355,13797,7891167011953,10,atum-gomes-da-costa-ralado-com-molho-de-tomate-170g,https://mercadinhossaoluiz.com.br/produto/atum-gomes-da-costa-ralado-com-molho-de-tomate-170g
+ovos,ATUM GOMES COSTA RALADO MOLHO PICANTE 170G,8.41,8.41,False,355,13797,7891167011960,5,atum-gomes-da-costa-ralado-com-molho-de-tomate-picante-170g,https://mercadinhossaoluiz.com.br/produto/atum-gomes-da-costa-ralado-com-molho-de-tomate-picante-170g
+ovos,PATÊ DE ATUM GOMES COSTA TRADICIONAL 150G,12.79,12.79,False,355,13797,7891167011847,4,pate-de-atum-gomes-da-costa-tradicional-150g-72403,https://mercadinhossaoluiz.com.br/produto/pate-de-atum-gomes-da-costa-tradicional-150g-72403
+ovos,PATÊ DE ATUM GOMES COSTA LIGHT 150G,12.79,12.79,False,355,13797,7891167011854,6,pate-de-atum-gomes-da-costa-light-150g,https://mercadinhossaoluiz.com.br/produto/pate-de-atum-gomes-da-costa-light-150g
+ovos,PATÊ DE ATUM GOMES COSTA AZEITONA 150G,12.79,12.79,False,355,13797,7891167011861,6,pate-de-atum-gomes-da-costa-azeitona-150g,https://mercadinhossaoluiz.com.br/produto/pate-de-atum-gomes-da-costa-azeitona-150g
+ovos,FÓSFORO FIAT LUX EXTRA LONGOS C/50,6.73,6.73,False,355,13797,7896007941254,8,fosforos-fiat-lux-extra-longo-com-50-unidades,https://mercadinhossaoluiz.com.br/produto/fosforos-fiat-lux-extra-longo-com-50-unidades
+ovos,SAL REFINADO SOSAL PACOTE 1KG,1.88,1.88,False,355,13797,7897167100024,117,sal-refinado-sosal-pacote-1kg,https://mercadinhossaoluiz.com.br/produto/sal-refinado-sosal-pacote-1kg
+ovos,GELO ICE SUPER 3KG,14.62,14.62,False,355,13797,7898085100011,23,gelo-ice-super-3kg,https://mercadinhossaoluiz.com.br/produto/gelo-ice-super-3kg
+ovos,FILTRO DE PAPEL SANTA CLARA 102 C/30,6.73,6.73,False,355,13797,7896224835787,54,filtro-de-papel-santa-clara-102,https://mercadinhossaoluiz.com.br/produto/filtro-de-papel-santa-clara-102
+ovos,FILTRO DE PAPEL SANTA CLARA 103 C/30,6.73,6.73,False,355,13797,7896224835794,17,filtro-de-papel-santa-clara-103,https://mercadinhossaoluiz.com.br/produto/filtro-de-papel-santa-clara-103
+ovos,COUSCOUS TIPIAK 500G,32.89,32.89,False,355,13797,3165440007082,3,couscous-frances-tipiak-500g,https://mercadinhossaoluiz.com.br/produto/couscous-frances-tipiak-500g
+ovos,SALADA DE ATUM GOMES COSTA BATATA ERVILHA E CENOURA 150G,13.74,13.74,False,355,13797,7891167014022,4,salada-com-atum-gomes-da-costa-seleta-150g,https://mercadinhossaoluiz.com.br/produto/salada-com-atum-gomes-da-costa-seleta-150g
+ovos,SALADA DE ATUM GOMES COSTA BATATA E AZEITONA 170G,13.74,13.74,False,355,13797,7891167014015,4,salada-de-atum-gomes-da-costa-maionese-150g,https://mercadinhossaoluiz.com.br/produto/salada-de-atum-gomes-da-costa-maionese-150g
+ovos,ATUM COQUEIRO PEDAÇOS AO ÓLEO 170G,17.53,17.53,False,355,13797,7894321823096,28,atum-coqueiro-pedacos-atum-170g,https://mercadinhossaoluiz.com.br/produto/atum-coqueiro-pedacos-atum-170g
+ovos,SARDINHA GOMES DA COSTA PICANTE 125G,7.32,7.32,False,355,13797,7891167021075,2,sardinha-gomes-da-costa-com-tomate-picante-125g,https://mercadinhossaoluiz.com.br/produto/sardinha-gomes-da-costa-com-tomate-picante-125g
+ovos,SARDINHA GOMES DA COSTA ERVAS 125G,7.32,7.32,False,355,13797,7891167021082,2,sardinha-gomes-da-costa-com-ervas-125g,https://mercadinhossaoluiz.com.br/produto/sardinha-gomes-da-costa-com-ervas-125g
+ovos,ATUM GOMES COSTA BAIXO SÓDIO SÓLIDO EM ÓLEO 170G,15.78,15.78,False,355,13797,7891167012059,17,atum-gomes-da-costa-solido-em-oleo-baixo-teor-sodio,https://mercadinhossaoluiz.com.br/produto/atum-gomes-da-costa-solido-em-oleo-baixo-teor-sodio
+ovos,FILTRO DE PAPEL MELITTA 100 PEQUENO,5.63,5.63,False,355,13797,7891021002189,8,coador-melitta-original-100-132474,https://mercadinhossaoluiz.com.br/produto/coador-melitta-original-100-132474
+ovos,VINAGRE DE MAÇÃ SR VICCINO ZERO AÇÚCAR 500ML,29.46,29.46,False,355,13797,7898908593174,2,vinagre-senhor-viccino-de-maca-zero-acucar-500ml,https://mercadinhossaoluiz.com.br/produto/vinagre-senhor-viccino-de-maca-zero-acucar-500ml
+ovos,FERMENTO BIOLÓGICO PÓ FLEISCHMANN INSTANTÂNEO 10G,2.58,2.58,False,355,13797,7898409957970,33,fermento-biologico-fleischmann-seco-instantaneo-10g,https://mercadinhossaoluiz.com.br/produto/fermento-biologico-fleischmann-seco-instantaneo-10g
+ovos,FERMENTO BIOLÓGICO PÓ FLEISCHMANN INSTANTÂNEO LV125 PG100G,14.26,14.26,False,355,13797,7898409951664,3,fermento-fleischmann-leve-125g-e-pague-100g,https://mercadinhossaoluiz.com.br/produto/fermento-fleischmann-leve-125g-e-pague-100g
+ovos,FERMENTO EM PÓ FLEISCHMANN BIOLÓGICO SACHE 10G LEVE 3 PAGUE 2,5.11,5.11,False,355,13797,7898409950827,12,fermento-em-po-fleischmann-biologico-sache-10g-leve-3-pague-2,https://mercadinhossaoluiz.com.br/produto/fermento-em-po-fleischmann-biologico-sache-10g-leve-3-pague-2
+ovos,MISTURA P/BOLO DONA BENTA CHOCOLATE 450G,8.37,8.37,False,355,13797,7896005217023,1,mistura-para-bolo-dona-benta-chocolate-450g,https://mercadinhossaoluiz.com.br/produto/mistura-para-bolo-dona-benta-chocolate-450g
+ovos,MISTURA P/BOLO DONA BENTA CHOCOLATE C/AVELÃ 450G,8.37,8.37,False,355,13797,7896005216927,7,mistura-para-bolo-dona-benta-chocolate-com-avela-450g,https://mercadinhossaoluiz.com.br/produto/mistura-para-bolo-dona-benta-chocolate-com-avela-450g
+ovos,COCO RALADO COPRA SEM AÇÚCAR 100G,9.37,9.37,False,355,13797,7898905356796,22,coco-ralado-sem-acucar-copra-100g,https://mercadinhossaoluiz.com.br/produto/coco-ralado-sem-acucar-copra-100g
+ovos,OVO BRANCO AVINE JUMBO C/20 UNIDADES,18.26,18.26,False,355,13797,7896304102952,15,ovos-avine-branco-jumbo-com-20,https://mercadinhossaoluiz.com.br/produto/ovos-avine-branco-jumbo-com-20
+ovos,OVO CAIPIRA SERTANEJO SÃO JOSÉ COM 20,16.83,16.83,False,355,13797,7897314912425,54,ovos-caipira-sao-jose-com-20,https://mercadinhossaoluiz.com.br/produto/ovos-caipira-sao-jose-com-20
+ovos,COCO RALADO DIKOKO PREMIUM 100G,7.88,7.88,False,355,13797,7898914221603,5,coco-ralado-dikoko-premium-100g-96179,https://mercadinhossaoluiz.com.br/produto/coco-ralado-dikoko-premium-100g-96179
+ovos,MISTURA P/BOLO VITALIN S/GLÚTEN AVEIA AMARANTO C/CACAU 300G,15.68,15.68,False,355,13797,7898568900749,3,mistura-para-bolo-aveia-vitalin-300g-amaranto-cacau,https://mercadinhossaoluiz.com.br/produto/mistura-para-bolo-aveia-vitalin-300g-amaranto-cacau
+ovos,MISTURA P/BOLO VITALIN SEM GLÚTEN AVEIA CHIA C/LARANJA 300G,15.68,15.68,False,355,13797,7898568900756,4,mistura-bolo-450g-sem-gluten-laranja-e-aveia-vitalin,https://mercadinhossaoluiz.com.br/produto/mistura-bolo-450g-sem-gluten-laranja-e-aveia-vitalin
+ovos,CREME MAGGI MENOS SÓDIO CEBOLA 61G,9.04,9.04,False,355,13797,7891000279380,18,creme-cebola-maggi-equilibrio-61g,https://mercadinhossaoluiz.com.br/produto/creme-cebola-maggi-equilibrio-61g
+ovos,QUEIJO PARMESÃO RALADO PRESIDENT 100G,15.04,15.04,False,355,13797,7896034680133,40,queijo-parmesao-president-ralado-100g,https://mercadinhossaoluiz.com.br/produto/queijo-parmesao-president-ralado-100g
+ovos,OVO CAIPIRA COSTUME SAUDÁVEL C/20 UNIDADES,18.26,18.26,False,355,13797,7896378100014,88,ovo-caipira-costume-saudavel-bandeja-com-20-unidades,https://mercadinhossaoluiz.com.br/produto/ovo-caipira-costume-saudavel-bandeja-com-20-unidades
+ovos,OVO CAIPIRA VERMELHO AVINE C/10 UNIDADES,9.84,9.84,False,355,13797,7896304103393,23,ovos-caipira-avine-com-10-unidades,https://mercadinhossaoluiz.com.br/produto/ovos-caipira-avine-com-10-unidades
+ovos,MILHO VERDE PREDILECTA LATA 170G,4.68,4.68,False,355,13797,7896292340503,101,milho-verde-lata-predilecta-170g,https://mercadinhossaoluiz.com.br/produto/milho-verde-lata-predilecta-170g
+ovos,ERVILHA PREDILECTA LATA 170G,4.68,4.68,False,355,13797,7896292340541,32,ervilha-predilecta-170g-lata,https://mercadinhossaoluiz.com.br/produto/ervilha-predilecta-170g-lata
+ovos,OVO BRANCO GRANDE CAGE-FREE AVINE BANDEJA COM 10 UNIDADES,9.67,9.67,False,355,13797,7896304103607,64,ovo-branco-grande-cage-free-avine-bandeja-com-10-unidades,https://mercadinhossaoluiz.com.br/produto/ovo-branco-grande-cage-free-avine-bandeja-com-10-unidades
+ovos,OVOS BRANCO AVINE JUMBO BDJ C 10UNI,9.78,9.78,False,355,13797,7896304103522,17,ovos-branco-avine-jumbo-bdj-c-10uni,https://mercadinhossaoluiz.com.br/produto/ovos-branco-avine-jumbo-bdj-c-10uni
+ovos,FOSFORO FIAT LUX COZINHA FORTE 200UN,7.04,7.04,False,355,13797,7896007942534,11,fosforo-fiat-lux-cozinha-forte-200un,https://mercadinhossaoluiz.com.br/produto/fosforo-fiat-lux-cozinha-forte-200un
