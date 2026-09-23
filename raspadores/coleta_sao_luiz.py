@@ -74,12 +74,17 @@ def extrair_itens(payload: dict, item_basico: str) -> list[dict]:
     registros = []
     for mix in payload.get("mixes", []):
         for item in mix.get("items", []):
+            desconto_percentual = None
+            if item.get("original_price"):
+                calculo = (1 - (item.get("price") / item.get("original_price"))) * 100
+                desconto_percentual = round(calculo, 2)
             registros.append(
                 {
                     "item_basico": item_basico,
                     "nome_produto": item.get("description"),
                     "preco": item.get("price"),
                     "preco_original": item.get("original_price"),
+                    "desconto_percentual": desconto_percentual,
                     "em_oferta": item.get("is_offer"),
                     "loja_market_id": item.get("market_id"),
                     "categoria_id": item.get("category_id"),
@@ -87,6 +92,8 @@ def extrair_itens(payload: dict, item_basico: str) -> list[dict]:
                     "estoque": item.get("stock"),
                     "slug": item.get("slug"),
                     "url_produto": f"https://mercadinhossaoluiz.com.br/produto/{item.get('slug')}",
+                    "categoria_busca": item_basico,
+                    "fonte": "Mercadinho São Luiz",
                 }
             )
     return registros

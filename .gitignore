@@ -5,5 +5,5 @@ video_executando.mov
 .DS_Store
 __pycache__/
 *.pyc
-.venv/
+venv/
 .env*
