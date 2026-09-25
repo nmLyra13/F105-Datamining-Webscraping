@@ -1,84 +1,65 @@
-﻿item_basico,nome_produto,preco,preco_original,desconto_percentual,em_oferta,loja_market_id,categoria_id,codigo_barras,estoque,slug,url_produto,categoria_busca,fonte
-arroz,ARROZ TIO JOÃO BRANCO LONGO FINO TIPO 1 1KG,7.11,7.11,0.0,False,355,13758,7893500020110,409,arroz-polido-tio-joao-saco-1kg,https://mercadinhossaoluiz.com.br/produto/arroz-polido-tio-joao-saco-1kg,arroz,Mercadinho São Luiz
-arroz,ARROZ TIO JOÃO COZINHA FÁCIL À GREGA 250G,9.95,9.95,0.0,False,355,13758,7893500025337,2,arroz-a-grega-tio-joao-250g,https://mercadinhossaoluiz.com.br/produto/arroz-a-grega-tio-joao-250g,arroz,Mercadinho São Luiz
-arroz,ARROZ TIO JOÃO COZINHA FÁCIL ERVAS FINA 250G,9.95,9.95,0.0,False,355,13758,7893500025344,3,arroz-tio-joao-cozinha-facil-250g-ervas-finas,https://mercadinhossaoluiz.com.br/produto/arroz-tio-joao-cozinha-facil-250g-ervas-finas,arroz,Mercadinho São Luiz
-arroz,ARROZ ARBÓRIO LA PASTINA 1KG,41.05,41.05,0.0,False,355,13758,7896196080260,16,arroz-arborio-la-pastina-1kg,https://mercadinhossaoluiz.com.br/produto/arroz-arborio-la-pastina-1kg,arroz,Mercadinho São Luiz
-arroz,ARROZ TIO JOÃO COZINHA FÁCIL BRÓCOLIS 250G,9.95,9.95,0.0,False,355,13758,7893500025375,3,arroz-tio-joao-cozinha-facil-brocolis-250g,https://mercadinhossaoluiz.com.br/produto/arroz-tio-joao-cozinha-facil-brocolis-250g,arroz,Mercadinho São Luiz
-arroz,ARROZ TIO JOÃO PARBOILIZADO 1KG,6.09,6.09,0.0,False,355,13758,7893500018469,145,arroz-parboilizado-tio-joao-1kg,https://mercadinhossaoluiz.com.br/produto/arroz-parboilizado-tio-joao-1kg,arroz,Mercadinho São Luiz
-arroz,ARROZ CAMIL PARBOILIZADO LONGO FINO TIPO 1 1KG,5.78,5.78,0.0,False,355,13758,7896006716112,31,arroz-parboilizado-camil-1kg-4200,https://mercadinhossaoluiz.com.br/produto/arroz-parboilizado-camil-1kg-4200,arroz,Mercadinho São Luiz
-arroz,ARROZ TIO JOÃO VARIEDADES MUNDIAIS CARNAROLLI ITALIANA 1KG,33.11,33.11,0.0,False,355,13758,7893500019206,2,arroz-tio-joao-carnaroli-cozinha-italiana-variedades-mundiais-1kg,https://mercadinhossaoluiz.com.br/produto/arroz-tio-joao-carnaroli-cozinha-italiana-variedades-mundiais-1kg,arroz,Mercadinho São Luiz
-arroz,ARROZ TIO JOÃO COZINHA & SABOR CARRETEIRO 175G,13.57,13.57,0.0,False,355,13758,7893500012672,5,arroz-carreteiro-tio-joao-175g,https://mercadinhossaoluiz.com.br/produto/arroz-carreteiro-tio-joao-175g,arroz,Mercadinho São Luiz
-arroz,ARROZ TIO JOÃO PARBOILIZADO C/8 SAQUINHOS 1KG,6.73,6.73,0.0,False,355,13758,7893500018476,17,arroz-tio-joao-parboilizado-saquinho-1kg,https://mercadinhossaoluiz.com.br/produto/arroz-tio-joao-parboilizado-saquinho-1kg,arroz,Mercadinho São Luiz
-arroz,ARROZ ARBÓRIO PAGANINI 1KG,43.36,43.36,0.0,False,355,13758,7898152992129,3,arroz-arboreo-paganini-1kg,https://mercadinhossaoluiz.com.br/produto/arroz-arboreo-paganini-1kg,arroz,Mercadinho São Luiz
-arroz,ARROZ TIO JOÃO VARIEDADES MUNDIAIS JASMINE TAILANDESA 1KG,20.68,20.68,0.0,False,355,13758,7893500019244,1,arroz-tio-joao-tailandesa-jasmine-1kg,https://mercadinhossaoluiz.com.br/produto/arroz-tio-joao-tailandesa-jasmine-1kg,arroz,Mercadinho São Luiz
-arroz,ARROZ TIO JOÃO COZINHA & SABOR GALINHA 175G,13.57,13.57,0.0,False,355,13758,7893500012689,2,arroz-tio-joao-sabor-galinha-175g-83119,https://mercadinhossaoluiz.com.br/produto/arroz-tio-joao-sabor-galinha-175g-83119,arroz,Mercadinho São Luiz
-arroz,ARROZ TIO JOÃO COZINHA & SABOR RISOTO À VALLGIANA 175G,13.57,13.57,0.0,False,355,13758,7893500012696,2,arroz-tio-joao-cozinha-e-sabor-risoto-a-valligiana-175g-101569,https://mercadinhossaoluiz.com.br/produto/arroz-tio-joao-cozinha-e-sabor-risoto-a-valligiana-175g-101569,arroz,Mercadinho São Luiz
-arroz,ARROZ CAMIL INTEGRAL 1KG,7.46,7.46,0.0,False,355,13758,7896006755517,18,arroz-integral-camil-pacote-1kg,https://mercadinhossaoluiz.com.br/produto/arroz-integral-camil-pacote-1kg,arroz,Mercadinho São Luiz
-arroz,ARROZ TIO JOÃO ORGÂNICO INTEGRAL 1KG,18.47,18.47,0.0,False,355,13758,7893500034827,6,arroz-integral-tio-joao-organico-1kg,https://mercadinhossaoluiz.com.br/produto/arroz-integral-tio-joao-organico-1kg,arroz,Mercadinho São Luiz
-arroz,ARROZ URBANO PARBOILIZADO LONGO FINO 1KG,5.67,5.67,0.0,False,355,13758,7896038306053,28,arroz-parboilizado-urbano-1kg-4687,https://mercadinhossaoluiz.com.br/produto/arroz-parboilizado-urbano-1kg-4687,arroz,Mercadinho São Luiz
-arroz,ARROZ ARA BRANCO LONGO FINO TIPO 1 1KG,4.94,4.94,0.0,False,355,13758,7898936614063,125,arroz-branco-ara-1kg,https://mercadinhossaoluiz.com.br/produto/arroz-branco-ara-1kg,arroz,Mercadinho São Luiz
-arroz,ARROZ TIO JOÃO 7 GRÃOS C/ QUINOA 500G,12.73,12.73,0.0,False,355,13758,7893500045434,5,arroz-tio-joao-7-cereais-integral-com-quinoa-500g,https://mercadinhossaoluiz.com.br/produto/arroz-tio-joao-7-cereais-integral-com-quinoa-500g,arroz,Mercadinho São Luiz
-arroz,ARROZ TIO JOÃO COZINHA & SABOR RISOTO NAPOLITANO 175G,13.57,13.57,0.0,False,355,13758,7893500044420,2,arroz-tio-joao-cozinha-e-sabor-risoto-napolitano-175g,https://mercadinhossaoluiz.com.br/produto/arroz-tio-joao-cozinha-e-sabor-risoto-napolitano-175g,arroz,Mercadinho São Luiz
-arroz,ARROZ MEU BIJU INTEGRAL 8 GRÃOS COM QUINOA 500G,10.62,10.62,0.0,False,355,13758,7893500058731,4,arroz-integral-8-graos-com-quinoa-biju-pacote-500g,https://mercadinhossaoluiz.com.br/produto/arroz-integral-8-graos-com-quinoa-biju-pacote-500g,arroz,Mercadinho São Luiz
-arroz,ARROZ MEU BIJU INTEGRAL 8 GRÃOS COM AVEIA 500G,10.62,10.62,0.0,False,355,13758,7893500066545,1,arroz-meu-biju-8-graos-com-aveia-500g,https://mercadinhossaoluiz.com.br/produto/arroz-meu-biju-8-graos-com-aveia-500g,arroz,Mercadinho São Luiz
-arroz,ARROZ TIO JOÃO COZINHA FÁCIL INTEGRAL VEGETAIS 200G,9.95,9.95,0.0,False,355,13758,7893500089629,3,arroz-tio-joao-cozinha-facil-200g-vegetais,https://mercadinhossaoluiz.com.br/produto/arroz-tio-joao-cozinha-facil-200g-vegetais,arroz,Mercadinho São Luiz
-arroz,ARROZ ARBÓRIO PAGANINI 500G,22.73,22.73,0.0,False,355,13758,7898152997087,1,arroz-arboreo-paganini-500g,https://mercadinhossaoluiz.com.br/produto/arroz-arboreo-paganini-500g,arroz,Mercadinho São Luiz
-arroz,ARROZ BASMATI LA CUMPARSITA 500G,30.62,30.62,0.0,False,355,13758,7898152996745,3,arroz-basmati-la-cumparsita-500g,https://mercadinhossaoluiz.com.br/produto/arroz-basmati-la-cumparsita-500g,arroz,Mercadinho São Luiz
-arroz,ARROZ URBANO 7 GRÃOS 1KG,20.52,20.52,0.0,False,355,13758,7896038300013,4,arroz-urbano-1kg-7-graos,https://mercadinhossaoluiz.com.br/produto/arroz-urbano-1kg-7-graos,arroz,Mercadinho São Luiz
-arroz,ARROZ BASMATI LA PASTINA 500G,38.16,38.16,0.0,False,355,13758,7896196069371,2,arroz-basmati-la-pastina-500g,https://mercadinhossaoluiz.com.br/produto/arroz-basmati-la-pastina-500g,arroz,Mercadinho São Luiz
-arroz,ARROZ LA PASTINA 1KG RISO PARA RISOTO,48.09,48.09,0.0,False,355,13758,7896196061337,1,arroz-la-pastina-1kg-riso-para-risoto,https://mercadinhossaoluiz.com.br/produto/arroz-la-pastina-1kg-riso-para-risoto,arroz,Mercadinho São Luiz
-arroz,ARROZ MEU BIJU 8 GRAOS INTEGRAIS 500G,10.62,10.62,0.0,False,355,13758,7893500124351,6,arroz-meu-biju-8-graos-integrais-500g,https://mercadinhossaoluiz.com.br/produto/arroz-meu-biju-8-graos-integrais-500g,arroz,Mercadinho São Luiz
-arroz,ARROZ TIO JOAO TOMATE E MANJERICAO 250G,9.95,9.95,0.0,False,355,13758,7893500044413,2,arroz-tio-joao-tomate-e-manjericao-250g,https://mercadinhossaoluiz.com.br/produto/arroz-tio-joao-tomate-e-manjericao-250g,arroz,Mercadinho São Luiz
-arroz,ARROZ FGO MOLHO BCO BACON PD CONG 300G,12.05,12.05,0.0,False,355,13758,7891515625535,13,,https://mercadinhossaoluiz.com.br/produto/None,arroz,Mercadinho São Luiz
-arroz,ARROZ CENOURA E AMENDOAS 1KG,22.5,22.5,0.0,False,355,13758,99147,999999,arroz-int-cenoura-abobrinha-rot-kg,https://mercadinhossaoluiz.com.br/produto/arroz-int-cenoura-abobrinha-rot-kg,arroz,Mercadinho São Luiz
-arroz,ARROZ NATALINO 1KG,32.5,32.5,0.0,False,355,13758,64300,999999,arroz-a-grega-300g-806391,https://mercadinhossaoluiz.com.br/produto/arroz-a-grega-300g-806391,arroz,Mercadinho São Luiz
-arroz,ARROZ TIO JOAO V MUND 500G ITA ARBO,16.58,16.58,0.0,False,355,13758,7893500127819,7,,https://mercadinhossaoluiz.com.br/produto/None,arroz,Mercadinho São Luiz
-feijao,FEIJÃO PRETO COMBRASIL TIPO 1 1KG,11.47,11.47,0.0,False,355,13759,7896101062015,28,feijao-combrasil-preto-1kg,https://mercadinhossaoluiz.com.br/produto/feijao-combrasil-preto-1kg,feijao,Mercadinho São Luiz
-feijao,FEIJAO VERDE NATAN 1KG,32.41,32.41,0.0,False,355,13759,7898902651016,27,feijao-verde-natan-1kg-99645,https://mercadinhossaoluiz.com.br/produto/feijao-verde-natan-1kg-99645,feijao,Mercadinho São Luiz
-feijao,FEIJAO VERDE NATAN 500G,16.2,16.2,0.0,False,355,13759,7898902651023,38,feijao-verde-natan-500g-95868,https://mercadinhossaoluiz.com.br/produto/feijao-verde-natan-500g-95868,feijao,Mercadinho São Luiz
-feijao,FEIJÃO DE CORDA FIBRA TIPO 1 1KG,6.58,6.58,0.0,False,355,13759,7898384200016,29,feijao-de-corda-tipo-1-fibra-pacote-1kg,https://mercadinhossaoluiz.com.br/produto/feijao-de-corda-tipo-1-fibra-pacote-1kg,feijao,Mercadinho São Luiz
-feijao,FEIJÃO CARIOCA FIBRA 1KG,8.94,8.94,0.0,False,355,13759,7898384200023,51,feijao-carioca-tipo-1-fibra-pacote-1kg,https://mercadinhossaoluiz.com.br/produto/feijao-carioca-tipo-1-fibra-pacote-1kg,feijao,Mercadinho São Luiz
-feijao,FEIJÃO CARIOCA KICALDO 1KG,9.88,9.88,0.0,False,355,13759,7896116900029,87,feijao-carioca-kicaldo-1kg-4108,https://mercadinhossaoluiz.com.br/produto/feijao-carioca-kicaldo-1kg-4108,feijao,Mercadinho São Luiz
-feijao,FEIJÃO BRANCO FIBRA 1KG,7.25,7.25,0.0,False,355,13759,7898384200122,27,feijao-branco-tipo-1-fibra-pacote-1kg,https://mercadinhossaoluiz.com.br/produto/feijao-branco-tipo-1-fibra-pacote-1kg,feijao,Mercadinho São Luiz
-feijao,FEIJÃO PRETO KICALDO 1KG,7.78,7.78,0.0,False,355,13759,7896116900050,55,feijao-preto-kicaldo-1kg-4707,https://mercadinhossaoluiz.com.br/produto/feijao-preto-kicaldo-1kg-4707,feijao,Mercadinho São Luiz
-feijao,FEIJÃO DE CORDA KICALDO 1KG,7.11,7.11,0.0,False,355,13759,7896116901347,47,feijao-de-corda-kicaldo-pacote-1kg,https://mercadinhossaoluiz.com.br/produto/feijao-de-corda-kicaldo-pacote-1kg,feijao,Mercadinho São Luiz
-feijao,FEIJÃO FRADINHO KICALDO 1KG,6.83,6.83,0.0,False,355,13759,7896116901385,11,feijao-fradinho-kicaldo-1kg-4473,https://mercadinhossaoluiz.com.br/produto/feijao-fradinho-kicaldo-1kg-4473,feijao,Mercadinho São Luiz
-feijao,FEIJÃO JALO KICALDO 1KG,15.78,15.78,0.0,False,355,13759,7896116900432,4,feijao-jalo-kicaldo-1kg,https://mercadinhossaoluiz.com.br/produto/feijao-jalo-kicaldo-1kg,feijao,Mercadinho São Luiz
-feijao,FEIJÃO RAJADO KICALDO 1KG,15.78,15.78,0.0,False,355,13759,7896116900425,10,feijao-rajado-kicaldo-1kg,https://mercadinhossaoluiz.com.br/produto/feijao-rajado-kicaldo-1kg,feijao,Mercadinho São Luiz
-feijao,FEIJÃO BRANCO BIJU 500G,7.21,7.21,0.0,False,355,13759,7893500005902,3,feijao-branco-biju-500g-94412,https://mercadinhossaoluiz.com.br/produto/feijao-branco-biju-500g-94412,feijao,Mercadinho São Luiz
-feijao,FEIJÃO PRETO PRONTO CAMIL 490G,11.32,11.32,0.0,False,355,13759,7896006712398,6,feijao-preto-camil-pronto-sem-tempero-490g,https://mercadinhossaoluiz.com.br/produto/feijao-preto-camil-pronto-sem-tempero-490g,feijao,Mercadinho São Luiz
-feijao,FEIJÃO CARIOCA DONA DÊ 1KG,8.94,8.94,0.0,False,355,13759,7898922012019,47,feijao-carioca-dona-de-pacote-1kg,https://mercadinhossaoluiz.com.br/produto/feijao-carioca-dona-de-pacote-1kg,feijao,Mercadinho São Luiz
-feijao,FEIJAO MULATINHO COMBRASIL 500G,10.42,10.42,0.0,False,355,13759,7896101062572,12,feijao-mulatinho-combrasil-500g,https://mercadinhossaoluiz.com.br/produto/feijao-mulatinho-combrasil-500g,feijao,Mercadinho São Luiz
-feijao,FEIJÃO BRANCO KICALDO 1KG,17.78,17.78,0.0,False,355,13759,7896116900807,8,feijao-branco-kicaldo-1kg-111494,https://mercadinhossaoluiz.com.br/produto/feijao-branco-kicaldo-1kg-111494,feijao,Mercadinho São Luiz
-feijao,FEIJÃO VERMELHO KICALDO 1KG,16.83,16.83,0.0,False,355,13759,7896116900845,8,feijao-vermelho-kicaldo-1kg,https://mercadinhossaoluiz.com.br/produto/feijao-vermelho-kicaldo-1kg,feijao,Mercadinho São Luiz
-feijao,FEIJAO VERMELHO COMBRASIL TIPO 1 500G,8.32,8.32,0.0,False,355,13759,7896101062596,8,feijao-vermelho-combrasil-tipo-1-500g,https://mercadinhossaoluiz.com.br/produto/feijao-vermelho-combrasil-tipo-1-500g,feijao,Mercadinho São Luiz
-feijao,FEIJÃO VERDE FAZENDA GRANGEIRO 500G,13.67,13.67,0.0,False,355,13759,7898994973300,29,feijao-verde-fazenda-grangeiro-500g,https://mercadinhossaoluiz.com.br/produto/feijao-verde-fazenda-grangeiro-500g,feijao,Mercadinho São Luiz
-feijao,FEIJÃO CARIOCA T1 COMBRASIL PACOTE 1KG,14.63,14.63,0.0,False,355,13759,7896101062022,3,feijao-carioca-t1-combrasil-pacote-1kg,https://mercadinhossaoluiz.com.br/produto/feijao-carioca-t1-combrasil-pacote-1kg,feijao,Mercadinho São Luiz
-acucar,AÇÚCAR CRISTAL OLHO D`AGUA 1KG,3.67,3.67,0.0,False,355,13760,7898994678014,303,acucar-cristal-olho-dagua-1kg-93921,https://mercadinhossaoluiz.com.br/produto/acucar-cristal-olho-dagua-1kg-93921,acucar,Mercadinho São Luiz
-acucar,AÇÚCAR UNIÃO GLAÇÚCAR 500G,4.89,4.89,0.0,False,355,13760,7891910007110,9,acucar-glacucar-uniao-500g,https://mercadinhossaoluiz.com.br/produto/acucar-glacucar-uniao-500g,acucar,Mercadinho São Luiz
-acucar,AÇÚCAR DEMERARA UNIÃO 1KG,6.2,6.2,0.0,False,355,13760,7891910030101,57,acucar-demerara-uniao-pacote-1kg,https://mercadinhossaoluiz.com.br/produto/acucar-demerara-uniao-pacote-1kg,acucar,Mercadinho São Luiz
-acucar,AÇÚCAR CRISTAL UNIÃO ORGÂNICO 1KG,8.79,8.79,0.0,False,355,13760,7891910020034,8,acucar-cristal-uniao-organico-1kg,https://mercadinhossaoluiz.com.br/produto/acucar-cristal-uniao-organico-1kg,acucar,Mercadinho São Luiz
-acucar,AÇÚCAR DEMERARA UNIÃO NATURALE 1KG,7.53,7.53,0.0,False,355,13760,7891910020065,12,acucar-naturale-demerara-uniao-1kg,https://mercadinhossaoluiz.com.br/produto/acucar-naturale-demerara-uniao-1kg,acucar,Mercadinho São Luiz
-acucar,AÇÚCAR DEMERARA PRECIOSO 1KG,6.31,6.31,0.0,False,355,13760,7898926342105,17,acucar-demerara-precioso-1kg,https://mercadinhossaoluiz.com.br/produto/acucar-demerara-precioso-1kg,acucar,Mercadinho São Luiz
-acucar,AÇÚCAR DEMERARA OLHO D`ÁGUA 1KG,5.25,5.25,0.0,False,355,13760,7896725201012,70,acucar-demerara-olho-dagua-1kg-93922,https://mercadinhossaoluiz.com.br/produto/acucar-demerara-olho-dagua-1kg-93922,acucar,Mercadinho São Luiz
-acucar,AÇÚCAR MASCAVO ÁSTER 1KG,12.52,12.52,0.0,False,355,13760,7898961803012,6,acucar-aster-mascavo-sache-1kg,https://mercadinhossaoluiz.com.br/produto/acucar-aster-mascavo-sache-1kg,acucar,Mercadinho São Luiz
-acucar,AÇÚCAR MASCAVO UNIÃO PACOTE 1KG,23.25,23.25,0.0,False,355,13760,7891910030293,7,acucar-mascavo-uniao-pacote-1kg,https://mercadinhossaoluiz.com.br/produto/acucar-mascavo-uniao-pacote-1kg,acucar,Mercadinho São Luiz
-acucar,AÇÚCAR MASCAVO PRECIOSO 1KG,10.42,10.42,0.0,False,355,13760,7898926342532,1,acucar-mascavo-1kg-precioso,https://mercadinhossaoluiz.com.br/produto/acucar-mascavo-1kg-precioso,acucar,Mercadinho São Luiz
-acucar,AÇÚCAR DEMERARA ASTER 1KG,6.73,6.73,0.0,False,355,13760,7898961803050,31,acucar-demerara-aster-1kg-148577,https://mercadinhossaoluiz.com.br/produto/acucar-demerara-aster-1kg-148577,acucar,Mercadinho São Luiz
-acucar,ACUCAR GRANELLI PCT 1KG MASCAVO,14.26,14.26,0.0,False,355,13760,7898996012243,12,,https://mercadinhossaoluiz.com.br/produto/None,acucar,Mercadinho São Luiz
-acucar,ACUCAR GRANELLI MASCAVO 500G ~,8.09,8.09,0.0,False,355,13760,7898996012250,12,,https://mercadinhossaoluiz.com.br/produto/None,acucar,Mercadinho São Luiz
-oleo,ÓLEO DE SOJA SOYA 900ML,9.46,9.46,0.0,False,355,13799,7891107101621,131,oleo-de-soja-900ml-313,https://mercadinhossaoluiz.com.br/produto/oleo-de-soja-900ml-313,oleo,Mercadinho São Luiz
-oleo,ÓLEO DE MILHO LIZA 900ML,20.95,20.95,0.0,False,355,13799,7896036090619,44,oleo-de-milho-liza-900ml,https://mercadinhossaoluiz.com.br/produto/oleo-de-milho-liza-900ml,oleo,Mercadinho São Luiz
-oleo,ÓLEO DE CANOLA LIZA 900ML,20.95,20.95,0.0,False,355,13799,7896036090626,8,oleo-canola-liza-900ml,https://mercadinhossaoluiz.com.br/produto/oleo-canola-liza-900ml,oleo,Mercadinho São Luiz
-ovos,OVO BRANCO AVINE EXTRA C/20 UNIDADES,17.36,17.36,0.0,False,355,13797,7896304100064,7,ovos-avine-branco-extra-com-20,https://mercadinhossaoluiz.com.br/produto/ovos-avine-branco-extra-com-20,ovos,Mercadinho São Luiz
-ovos,OVOS AVINE BRANCO GRANDE BANDEJA COM 30 UNIDADES,24.31,24.31,0.0,False,355,13797,7896304100149,92,ovos-avine-branco-grande-bandeja-com-30-unidades,https://mercadinhossaoluiz.com.br/produto/ovos-avine-branco-grande-bandeja-com-30-unidades,ovos,Mercadinho São Luiz
-ovos,OVO VERMELHO AVINE OMEGA 3 C/10 UNIDADES,10.2,10.2,0.0,False,355,13797,7896304100934,4,ovos-avine-vermelho-omega-3-com-10,https://mercadinhossaoluiz.com.br/produto/ovos-avine-vermelho-omega-3-com-10,ovos,Mercadinho São Luiz
-ovos,OVO DE CODORNA AVINE C/30 UNIDADES,9.84,9.84,0.0,False,355,13797,7896304100996,11,ovo-de-codorna-30-unidades-avine,https://mercadinhossaoluiz.com.br/produto/ovo-de-codorna-30-unidades-avine,ovos,Mercadinho São Luiz
-ovos,OVO VERMELHO AVINE CHICO BENTO C/10 UNIDADES,10.31,10.31,0.0,False,355,13797,7896304100965,10,ovos-avine-chico-bento-vermelho-grande-com-10,https://mercadinhossaoluiz.com.br/produto/ovos-avine-chico-bento-vermelho-grande-com-10,ovos,Mercadinho São Luiz
-ovos,OVO BRANCO AVINE EXTRA C/30 UNIDADES,25.63,25.63,0.0,False,355,13797,7896304101016,57,ovos-avine-extra-branco-com-30-unidades,https://mercadinhossaoluiz.com.br/produto/ovos-avine-extra-branco-com-30-unidades,ovos,Mercadinho São Luiz
-ovos,OVO BRANCO AVINE JUMBO C/20 UNIDADES,18.26,18.26,0.0,False,355,13797,7896304102952,6,ovos-avine-branco-jumbo-com-20,https://mercadinhossaoluiz.com.br/produto/ovos-avine-branco-jumbo-com-20,ovos,Mercadinho São Luiz
-ovos,OVO CAIPIRA SERTANEJO SÃO JOSÉ COM 20,16.83,16.83,0.0,False,355,13797,7897314912425,12,ovos-caipira-sao-jose-com-20,https://mercadinhossaoluiz.com.br/produto/ovos-caipira-sao-jose-com-20,ovos,Mercadinho São Luiz
-ovos,OVO CAIPIRA COSTUME SAUDÁVEL C/20 UNIDADES,18.26,18.26,0.0,False,355,13797,7896378100014,43,ovo-caipira-costume-saudavel-bandeja-com-20-unidades,https://mercadinhossaoluiz.com.br/produto/ovo-caipira-costume-saudavel-bandeja-com-20-unidades,ovos,Mercadinho São Luiz
-ovos,OVO CAIPIRA VERMELHO AVINE C/10 UNIDADES,9.84,9.84,0.0,False,355,13797,7896304103393,5,ovos-caipira-avine-com-10-unidades,https://mercadinhossaoluiz.com.br/produto/ovos-caipira-avine-com-10-unidades,ovos,Mercadinho São Luiz
-ovos,OVOS BRANCO AVINE JUMBO BDJ C 10UNI,9.78,9.78,0.0,False,355,13797,7896304103522,5,ovos-branco-avine-jumbo-bdj-c-10uni,https://mercadinhossaoluiz.com.br/produto/ovos-branco-avine-jumbo-bdj-c-10uni,ovos,Mercadinho São Luiz
-ovos,OVOS CODORNA SAO JOSE COM 30,11.25,11.25,0.0,False,355,13797,7897314911565,7,ovos-codorna-sao-jose-com-30,https://mercadinhossaoluiz.com.br/produto/ovos-codorna-sao-jose-com-30,ovos,Mercadinho São Luiz
+﻿item_basico,nome_produto,preco,preco_original,desconto_percentual,codigo_produto,categoria_busca,fonte,url_produto
+arroz,ARROZ TIO JOÃO BRANCO LONGO FINO TIPO 1 1KG,6.39,7.11,10.13,7893500020110,arroz,saoluiz,https://mercadinhossaoluiz.com.br/produto/arroz-polido-tio-joao-saco-1kg
+arroz,ARROZ TIO JOÃO COZINHA FÁCIL À GREGA 250G,9.95,9.95,0.0,7893500025337,arroz,saoluiz,https://mercadinhossaoluiz.com.br/produto/arroz-a-grega-tio-joao-250g
+arroz,ARROZ TIO JOÃO COZINHA FÁCIL ERVAS FINA 250G,9.95,9.95,0.0,7893500025344,arroz,saoluiz,https://mercadinhossaoluiz.com.br/produto/arroz-tio-joao-cozinha-facil-250g-ervas-finas
+arroz,ARROZ ARBÓRIO LA PASTINA 1KG,36.9,41.05,10.11,7896196080260,arroz,saoluiz,https://mercadinhossaoluiz.com.br/produto/arroz-arborio-la-pastina-1kg
+arroz,ARROZ TIO JOÃO COZINHA FÁCIL BRÓCOLIS 250G,9.95,9.95,0.0,7893500025375,arroz,saoluiz,https://mercadinhossaoluiz.com.br/produto/arroz-tio-joao-cozinha-facil-brocolis-250g
+feijao,FEIJÃO PRETO COMBRASIL TIPO 1 1KG,11.47,11.47,0.0,7896101062015,feijao,saoluiz,https://mercadinhossaoluiz.com.br/produto/feijao-combrasil-preto-1kg
+feijao,FEIJAO VERDE NATAN 1KG,21.99,32.41,32.15,7898902651016,feijao,saoluiz,https://mercadinhossaoluiz.com.br/produto/feijao-verde-natan-1kg-99645
+feijao,FEIJAO VERDE NATAN 500G,10.99,16.2,32.16,7898902651023,feijao,saoluiz,https://mercadinhossaoluiz.com.br/produto/feijao-verde-natan-500g-95868
+feijao,FEIJÃO DE CORDA FIBRA TIPO 1 1KG,6.58,6.58,0.0,7898384200016,feijao,saoluiz,https://mercadinhossaoluiz.com.br/produto/feijao-de-corda-tipo-1-fibra-pacote-1kg
+feijao,FEIJÃO CARIOCA FIBRA 1KG,8.94,8.94,0.0,7898384200023,feijao,saoluiz,https://mercadinhossaoluiz.com.br/produto/feijao-carioca-tipo-1-fibra-pacote-1kg
+acucar,AÇÚCAR CRISTAL OLHO D`AGUA 1KG,3.67,3.67,0.0,7898994678014,acucar,saoluiz,https://mercadinhossaoluiz.com.br/produto/acucar-cristal-olho-dagua-1kg-93921
+acucar,AÇÚCAR UNIÃO GLAÇÚCAR 500G,4.89,4.89,0.0,7891910007110,acucar,saoluiz,https://mercadinhossaoluiz.com.br/produto/acucar-glacucar-uniao-500g
+acucar,AÇÚCAR DEMERARA UNIÃO 1KG,6.2,6.2,0.0,7891910030101,acucar,saoluiz,https://mercadinhossaoluiz.com.br/produto/acucar-demerara-uniao-pacote-1kg
+ovos,OVO VERMELHO AVINE EXTRA C/20 UNIDADES,19.46,19.46,0.0,7896304100279,ovos,saoluiz,https://mercadinhossaoluiz.com.br/produto/ovos-avine-vermelho-extra-com-20
+ovos,OVO BRANCO AVINE EXTRA C/20 UNIDADES,17.36,17.36,0.0,7896304100064,ovos,saoluiz,https://mercadinhossaoluiz.com.br/produto/ovos-avine-branco-extra-com-20
+ovos,OVOS AVINE BRANCO GRANDE BANDEJA COM 30 UNIDADES,24.31,24.31,0.0,7896304100149,ovos,saoluiz,https://mercadinhossaoluiz.com.br/produto/ovos-avine-branco-grande-bandeja-com-30-unidades
+arroz,Arroz Branco Longo-fino Tipo 1 Grãos Selecionados Carrefour 5Kg,12.79,15.99,20.01,4273,arroz,carrefour,https://mercado.carrefour.com.br/produto/arroz-branco-longo-fino-tipo-1-graos-selecionados-carrefour-5kg-4273
+arroz,Arroz Branco Camil Tipo 1 1kg,4.39,5.49,20.04,15310,arroz,carrefour,https://mercado.carrefour.com.br/produto/arroz-branco-camil-tipo-1-1kg-15310
+arroz,Arroz Branco Longo-fino Tipo 1 Tio João 1 Kg,5.29,6.49,18.49,1972,arroz,carrefour,https://mercado.carrefour.com.br/produto/arroz-branco-longo-fino-tipo-1-tio-joao-1-kg-1972
+arroz,Arroz Branco Longo-fino Tipo 1 Tio João 5 Kg,25.69,31.19,17.63,14973,arroz,carrefour,https://mercado.carrefour.com.br/produto/arroz-branco-longo-fino-tipo-1-tio-joao-5-kg-14973
+arroz,Arroz Branco Longo-fino Tipo 1 Namorado 5Kg,19.49,24.99,22.01,5854,arroz,carrefour,https://mercado.carrefour.com.br/produto/arroz-branco-longo-fino-tipo-1-namorado-5kg-5854
+feijao,Feijao Preto Carrefour 1 Kg,5.98,5.98,0.0,6297839,feijao,carrefour,https://mercado.carrefour.com.br/produto/feijao-preto-carrefour-1-kg-6297839
+feijao,Feijão Carioca Tipo 1 Kicaldo 1Kg,7.19,8.99,20.02,2967,feijao,carrefour,https://mercado.carrefour.com.br/produto/feijao-carioca-tipo-1-kicaldo-1kg-2967
+feijao,Feijão Carioca Tipo 1 Broto Legal 1 Kg,8.69,10.39,16.36,2968,feijao,carrefour,https://mercado.carrefour.com.br/produto/feijao-carioca-tipo-1-broto-legal-1-kg-2968
+feijao,Feijão Solito Carioca Tipo 1 1Kg,6.39,8.79,27.3,4931,feijao,carrefour,https://mercado.carrefour.com.br/produto/feijao-solito-carioca-tipo-1-1kg-4931
+feijao,Feijão Jalo Caldo Bom 500g,14.99,14.99,0.0,13105,feijao,carrefour,https://mercado.carrefour.com.br/produto/feijao-jalo-caldo-bom-500g-13105
+acucar,Açúcar Refinado União 1kg,2.99,3.79,21.11,2406,acucar,carrefour,https://mercado.carrefour.com.br/produto/acucar-refinado-uniao-1kg-2406
+acucar,Açúcar Refinado Carrefour 1kg,2.69,3.19,15.67,17755,acucar,carrefour,https://mercado.carrefour.com.br/produto/acucar-refinado-carrefour-1kg-17755
+acucar,Açúcar Demerara Orgânico Carrefour Bio 1 Kg,6.39,7.99,20.03,6470432,acucar,carrefour,https://mercado.carrefour.com.br/produto/acucar-demerara-organico-carrefour-bio-1-kg-6470432
+oleo,Óleo de Soja Liza 900ml,6.19,7.79,20.54,5278,oleo,carrefour,https://mercado.carrefour.com.br/produto/oleo-de-soja-liza-900ml-5278
+oleo,Óleo de Soja Confiare 900ml,5.69,7.09,19.75,325711880,oleo,carrefour,https://mercado.carrefour.com.br/produto/oleo-de-soja-confiare-900ml-325711880
+oleo,Óleo de Girassol Carrefour 900ml,7.49,9.39,20.23,12342,oleo,carrefour,https://mercado.carrefour.com.br/produto/oleo-de-girassol-carrefour-900ml-12342
+oleo,Óleo de Girassol Soya 900ml,11.69,14.59,19.88,14644,oleo,carrefour,https://mercado.carrefour.com.br/produto/oleo-de-girassol-soya-900ml-14644
+oleo,Óleo de Soja Soya 900ml,7.59,7.59,0.0,15237,oleo,carrefour,https://mercado.carrefour.com.br/produto/oleo-de-soja-soya-900ml-15237
+ovos,Ovos Brancos Jumbo Graciana Estojo com 10 Unidades,5.98,5.98,0.0,340331205,ovos,carrefour,https://mercado.carrefour.com.br/produto/ovos-brancos-jumbo-graciana-estojo-com-10-unidades-340331205
+ovos,Ovos Vermelhos Carrefour 20 Unidades,10.19,16.99,40.02,9821,ovos,carrefour,https://mercado.carrefour.com.br/produto/ovos-vermelhos-carrefour-20-unidades-9821
+ovos,Ovos Caipira Ito Country com 10 Unidades,11.39,14.29,20.29,321970526,ovos,carrefour,https://mercado.carrefour.com.br/produto/ovos-caipira-ito-country-com-10-unidades-321970526
+ovos,Ovos Tipo Grande Vermelho Caipira Categoria A Carrefour 10 Unidades,10.39,12.99,20.02,6637,ovos,carrefour,https://mercado.carrefour.com.br/produto/ovos-tipo-grande-vermelho-caipira-categoria-a-carrefour-10-unidades-6637
+ovos,Ovo Branco Grande Ac Planalto Ovos Bandeja com 20,14.39,16.99,15.3,9259352,ovos,carrefour,https://mercado.carrefour.com.br/produto/ovo-branco-grande-ac-planalto-ovos-bandeja-com-20-9259352
+arroz,Arroz Agulhinha Tipo 1 CAMIL Pacote 5kg,23.99,23.99,0.0,0791595,arroz,paodeacucar,https://www.paodeacucar.com/produto/41329/arroz-agulhinha-tipo-1-camil-pacote-5kg
+arroz,Arroz Agulhinha Tipo 1 Tio João Pacote 1kg,5.89,7.79,24.39,0154093,arroz,paodeacucar,https://www.paodeacucar.com/produto/31117/arroz-agulhinha-tipo-1-tio-joao-pacote-1kg
+arroz,Arroz Agulhinha Tipo 1 TIO JOÃO Pacote 5kg,27.49,35.99,23.62,0132817,arroz,paodeacucar,https://www.paodeacucar.com/produto/138068/arroz-agulhinha-tipo-1-tio-joao-pacote-5kg
+arroz,Arroz Branco Tipo 1 Qualitá Pacote 5kg,22.99,22.99,0.0,6009199,arroz,paodeacucar,https://www.paodeacucar.com/produto/107050/arroz-branco-tipo-1-qualita-pacote-5kg
+arroz,Arroz Agulhinha Tipo 1 CAMIL Pacote 1kg,5.99,5.99,0.0,0300438,arroz,paodeacucar,https://www.paodeacucar.com/produto/99080/arroz-agulhinha-tipo-1-camil-pacote-1kg
+feijao,Feijão Carioca Tipo 1 CAMIL Pacote 1kg,9.79,9.79,0.0,0468084,feijao,paodeacucar,https://www.paodeacucar.com/produto/9461/feijao-carioca-tipo-1-camil-pacote-1kg
+feijao,Feijão Preto Tipo 1 Camil Pacote 1kg,8.79,8.79,0.0,0468091,feijao,paodeacucar,https://www.paodeacucar.com/produto/9493/feijao-preto-tipo-1-camil-pacote-1kg
+feijao,Feijão Carioca Tipo 1 KICALDO Pacote 1Kg,11.49,11.49,0.0,0221146,feijao,paodeacucar,https://www.paodeacucar.com/produto/109209/feijao-carioca-tipo-1-kicaldo-pacote-1kg
+feijao,Feijão Carioca Tipo 1 Pantera Premium Pacote 1kg,10.99,10.99,0.0,2155883,feijao,paodeacucar,https://www.paodeacucar.com/produto/16961/feijao-carioca-tipo-1-pantera-premium-pacote-1kg
+feijao,Feijão Preto Tipo 1 Qualitá Pacote 1kg,6.99,6.99,0.0,5991464,feijao,paodeacucar,https://www.paodeacucar.com/produto/162822/feijao-preto-tipo-1-qualita-pacote-1kg
+acucar,Açúcar de Confeiteiro Glaçúcar União Pacote 500g,7.49,7.49,0.0,1123920,acucar,paodeacucar,https://www.paodeacucar.com/produto/48213/acucar-de-confeiteiro-glacucar-uniao-pacote-500g
+acucar,Açúcar Refinado União Pacote 1kg,3.99,3.99,0.0,0248334,acucar,paodeacucar,https://www.paodeacucar.com/produto/74215/acucar-refinado-uniao-pacote-1kg
+acucar,Açúcar Refinado CARAVELAS Pacote 1kg,3.49,3.49,0.0,3995600,acucar,paodeacucar,https://www.paodeacucar.com/produto/61474/acucar-refinado-caravelas-pacote-1kg
+acucar,Açúcar Refinado Qualitá Pacote 1kg,3.79,3.79,0.0,5977680,acucar,paodeacucar,https://www.paodeacucar.com/produto/103403/acucar-refinado-qualita-pacote-1kg
+acucar,Açúcar Demerara Orgânico Taeq Pacote 1kg,8.99,8.99,0.0,1276546,acucar,paodeacucar,https://www.paodeacucar.com/produto/602691/acucar-demerara-organico-taeq-pacote-1kg
+oleo,Óleo de Soja Tipo 1 Liza Garrafa 900ml,8.79,8.79,0.0,1230147,oleo,paodeacucar,https://www.paodeacucar.com/produto/131661/oleo-de-soja-tipo-1-liza-garrafa-900ml
+oleo,Óleo de Soja Tipo 1 Qualitá Garrafa 900ml,8.99,8.99,0.0,6894818,oleo,paodeacucar,https://www.paodeacucar.com/produto/30450/oleo-de-soja-tipo-1-qualita-garrafa-900ml
+oleo,Óleo De Soja SOYA Garrafa 900ml,9.29,9.29,0.0,0145091,oleo,paodeacucar,https://www.paodeacucar.com/produto/124153/oleo-de-soja-soya-garrafa-900ml
+oleo,Óleo de Girassol Tipo 1 Liza Especiais Garrafa 900ml,18.99,18.99,0.0,2285207,oleo,paodeacucar,https://www.paodeacucar.com/produto/7614/oleo-de-girassol-tipo-1-liza-especiais-garrafa-900ml
+oleo,Óleo de Milho Tipo 1 Liza Especiais Garrafa 900ml,19.99,19.99,0.0,2285610,oleo,paodeacucar,https://www.paodeacucar.com/produto/4446/oleo-de-milho-tipo-1-liza-especiais-garrafa-900ml
+ovos,Ovos Vermelhos Grande Orgânico Taeq Bandeja 10 Unidades,20.9,20.9,0.0,4656029,ovos,paodeacucar,https://www.paodeacucar.com/produto/178252/ovos-vermelhos-grande-organico-taeq-bandeja-10-unidades
+ovos,Ovos Vermelhos Happy Eggs com 10 Unidades,12.99,12.99,0.0,1369026,ovos,paodeacucar,https://www.paodeacucar.com/produto/1567345/ovos-vermelhos-happy-eggs-com-10-unidades
+ovos,Ovos Vermelhos Qualitá Livre de Gaiola Bandeja 20 Unidades,22.99,22.99,0.0,1404541,ovos,paodeacucar,https://www.paodeacucar.com/produto/1636359/ovos-vermelhos-qualita-livre-de-gaiola-bandeja-20-unidades
+ovos,Ovo Branco Grande Com 20 Unidades Mantiqueira,17.99,17.99,0.0,1414601,ovos,paodeacucar,https://www.paodeacucar.com/produto/1640606/ovo-branco-grande-com-20-unidades-mantiqueira
+ovos,Ovos Caipira Grande Korin Boa Pedida Bandeja 10 Unidades,18.99,18.99,0.0,1203469,ovos,paodeacucar,https://www.paodeacucar.com/produto/447316/ovos-caipira-grande-korin-boa-pedida-bandeja-10-unidades

@@ -5,9 +5,10 @@ descritivas, identifica padroes e gera os graficos + o dashboard da atividade.
 
 Gera:
   - estatisticas_descritivas.csv   (Fase D: media, min, max, mediana, contagem)
-  - grafico1_preco_medio.png       (grafico 1/3)
-  - grafico2_distribuicao_precos.png (grafico 2/3)
-  - grafico3_menor_maior_preco.png (grafico 3/3 - responde a pergunta de negocio)
+  - grafico1_preco_medio.png       (grafico 1/4)
+  - grafico2_distribuicao_precos.png (grafico 2/4)
+  - grafico3_menor_maior_preco.png (grafico 3/4 - responde a pergunta de negocio)
+  - grafico4_preco_medio_por_fonte.png (grafico 4/4 - responde a pergunta de negocio com base nas fontes)
   - dashboard.png                  (Fase E: dashboard com 2+ graficos)
   - insights.txt                   (padroes identificados, para colar no relatorio)
 
@@ -15,11 +16,18 @@ Uso:
     python3 analise.py
 """
 
+import matplotlib
+
+matplotlib.use("Agg")  # backend seguro para headless
+
 import matplotlib.pyplot as plt
 import pandas as pd
 
-ARQUIVO_ENTRADA = "dados/dados_tratados.csv"
+# Fonte padrão que cobre acentos latinos em qualquer ambiente
+plt.rcParams["font.family"] = "DejaVu Sans"
+plt.rcParams["axes.unicode_minus"] = False
 
+ARQUIVO_ENTRADA = "dados/dados_tratados.csv"
 # Paleta categorica (fixa por item_basico, reaproveitada em todos os graficos
 # para manter a mesma cor = mesma entidade em todo o trabalho).
 CORES_ITEM = {
@@ -37,10 +45,19 @@ NOMES_BONITOS = {
     "oleo": "Óleo",
     "ovos": "Ovos",
 }
-
 COR_MENOR = "#2a78d6"  # azul - "menor preco" (polo "bom")
 COR_MAIOR = "#e34948"  # vermelho - "maior preco" (polo "caro") - par divergente
-
+CORES_FONTE = {
+    "carrefour": "#2a78d6",  # azul
+    "paodeacucar": "#eb6834",  # laranja
+    "saoluiz": "#1baf7a",  # verde-água
+}
+NOMES_FONTE = {
+    "carrefour": "Carrefour",
+    "paodeacucar": "Pão de Açúcar",
+    "saoluiz": "São Luiz",
+}
+ORDEM_FONTES = ["carrefour", "paodeacucar", "saoluiz"]
 INK = "#0b0b0b"
 INK_SECUNDARIA = "#52514e"
 GRADE = "#e1e0d9"
@@ -84,6 +101,30 @@ def calcular_estatisticas(df: pd.DataFrame) -> pd.DataFrame:
     print("Estatísticas descritivas (também salvas em estatisticas_descritivas.csv):")
     print(stats.to_string())
     return stats
+
+
+def calcular_estatisticas_por_fonte(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Média de preço por item_basico x fonte.
+    Útil para ver qual mercado é sistematicamente mais barato em cada item.
+    """
+    tabela = (
+        df.pivot_table(
+            index="item_basico",
+            columns="fonte",
+            values="preco",
+            aggfunc="mean",
+            observed=True,
+        )
+        .round(2)
+        .reindex(ORDEM_ITENS)
+    )
+    tabela.to_csv("dados/estatisticas_por_fonte.csv", encoding="utf-8-sig")
+    print(
+        "\nPreço médio por item x fonte (também salvo em estatisticas_por_fonte.csv):"
+    )
+    print(tabela.to_string())
+    return tabela
 
 
 def grafico1_preco_medio(stats: pd.DataFrame):
@@ -252,6 +293,63 @@ def grafico3_menor_maior_preco(df: pd.DataFrame) -> pd.DataFrame:
     return resumo
 
 
+def grafico4_preco_medio_por_fonte(tabela_fonte: pd.DataFrame):
+    """
+    Barras agrupadas: para cada item básico, o preço médio em cada fonte.
+    Fontes ausentes naquele item simplesmente não aparecem.
+    """
+    fig, ax = plt.subplots(figsize=(9.5, 5), dpi=150)
+
+    itens = list(tabela_fonte.index)
+    n_fontes = len(ORDEM_FONTES)
+    largura = 0.8 / n_fontes
+    x_base = range(len(itens))
+
+    for i, fonte in enumerate(ORDEM_FONTES):
+        if fonte not in tabela_fonte.columns:
+            continue
+        valores = tabela_fonte[fonte].reindex(itens).values
+        posicoes = [x + (i - (n_fontes - 1) / 2) * largura for x in x_base]
+        barras = ax.bar(
+            posicoes,
+            valores,
+            width=largura,
+            color=CORES_FONTE[fonte],
+            label=NOMES_FONTE[fonte],
+            zorder=3,
+        )
+        for barra, valor in zip(barras, valores):
+            if pd.isna(valor):
+                continue
+            ax.annotate(
+                f"R$ {valor:.2f}",
+                (barra.get_x() + barra.get_width() / 2, valor),
+                textcoords="offset points",
+                xytext=(0, 4),
+                ha="center",
+                fontsize=7.5,
+                color=INK,
+            )
+
+    ax.set_xticks(list(x_base))
+    ax.set_xticklabels([NOMES_BONITOS[i] for i in itens])
+    ax.set_ylabel("Preço médio (R$)", color=INK_SECUNDARIA)
+    ax.set_xlabel("Item básico", color=INK_SECUNDARIA)
+    ax.set_title(
+        "Preço médio por item e por mercado",
+        fontsize=13,
+        fontweight="bold",
+        color=INK,
+        pad=14,
+    )
+    ax.legend(frameon=False, loc="upper right", title=None)
+    estilo_eixo(ax)
+    fig.tight_layout()
+    fig.savefig("graficos/grafico4_preco_medio_por_fonte.png")
+    plt.close(fig)
+    print("Salvo: grafico4_preco_medio_por_fonte.png")
+
+
 def montar_dashboard(stats: pd.DataFrame, resumo: pd.DataFrame):
     """Fase E: dashboard simples com >=2 graficos, em Python + Matplotlib."""
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(13, 5), dpi=150)
@@ -300,8 +398,8 @@ def montar_dashboard(stats: pd.DataFrame, resumo: pd.DataFrame):
     ax2.xaxis.grid(False)
 
     fig.suptitle(
-        "Dashboard — Cesta básica no São Luiz (mercadinhossaoluiz.com.br)",
-        fontsize=14,
+        "Dashboard — Cesta básica em 3 mercados (Carrefour, Pão de Açúcar e São Luiz)",
+        fontsize=13,
         fontweight="bold",
         color=INK,
         y=1.02,
@@ -310,6 +408,49 @@ def montar_dashboard(stats: pd.DataFrame, resumo: pd.DataFrame):
     fig.savefig("graficos/dashboard.png", bbox_inches="tight")
     plt.close(fig)
     print("Salvo: graficos/dashboard.png")
+
+
+def resumo_mais_baratos_por_tipo(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Para cada item básico, encontra o produto de menor preço entre TODAS as
+    fontes coletadas, e devolve nome, preço, fonte, url e código.
+    """
+    linhas = []
+    for item in ORDEM_ITENS:
+        sub = df[df["item_basico"] == item]
+        if sub.empty:
+            continue
+        row = sub.loc[sub["preco"].idxmin()]
+        linhas.append(
+            {
+                "item_basico": item,
+                "nome_produto": row["nome_produto"],
+                "preco": row["preco"],
+                "fonte": row["fonte"],
+                "url_produto": row["url_produto"],
+                "codigo_produto": row["codigo_produto"],
+            }
+        )
+    resumo = pd.DataFrame(linhas)
+    resumo.to_csv("dados/mais_baratos_por_tipo.csv", index=False, encoding="utf-8-sig")
+    return resumo
+
+
+def adicionar_insight_mais_baratos(
+    insights: list, resumo_baratos: pd.DataFrame
+) -> None:
+    """
+    Acrescenta ao arquivo insights.txt uma linha por item básico informando
+    nome, preço, fonte e link do produto mais barato encontrado.
+    """
+    bloco = ["5. Produto mais barato de cada tipo (considerando todas as fontes):"]
+    for _, row in resumo_baratos.iterrows():
+        bloco.append(
+            f"   - {NOMES_BONITOS[row['item_basico']]}: "
+            f'"{row["nome_produto"]}" — R$ {row["preco"]:.2f} '
+            f"({NOMES_FONTE.get(row['fonte'], row['fonte'])}) — {row['url_produto']}"
+        )
+    insights.append("\n".join(bloco))
 
 
 def identificar_insights(stats: pd.DataFrame, resumo: pd.DataFrame) -> list:
@@ -355,9 +496,26 @@ def identificar_insights(stats: pd.DataFrame, resumo: pd.DataFrame) -> list:
 
 if __name__ == "__main__":
     df = carregar_dados()
+
     stats = calcular_estatisticas(df)
+    tabela_fonte = calcular_estatisticas_por_fonte(df)
+
     grafico1_preco_medio(stats)
     grafico2_distribuicao_precos(df)
     resumo = grafico3_menor_maior_preco(df)
+    grafico4_preco_medio_por_fonte(tabela_fonte)
+
     montar_dashboard(stats, resumo)
-    identificar_insights(stats, resumo)
+
+    resumo_baratos = resumo_mais_baratos_por_tipo(df)
+    print(
+        "\nProduto mais barato de cada tipo (também salvo em mais_baratos_por_tipo.csv):"
+    )
+    print(resumo_baratos.to_string(index=False))
+
+    insights = identificar_insights(stats, resumo)
+    adicionar_insight_mais_baratos(insights, resumo_baratos)
+
+    # Reescreve o insights.txt com o novo bloco incluído
+    with open("insights.txt", "w", encoding="utf-8") as f:
+        f.write("\n\n".join(insights) + "\n")

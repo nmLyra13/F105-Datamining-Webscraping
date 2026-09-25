@@ -1,7 +1,14 @@
-1. Em média, Óleo é o item mais caro da cesta (R$ 19.66) e Açúcar o mais barato (R$ 9.07).
+1. Em média, Ovos é o item mais caro da cesta (R$ 15.95) e Açúcar o mais barato (R$ 4.96).
 
-2. Arroz é o item com maior variação de preço entre marcas: 783% de diferença entre a opção mais barata ("ARROZ ARA BRANCO LONGO FINO TIPO 1 1KG", R$ 4.94) e a mais cara ("ARROZ NEGRO LA PASTINA 500G", R$ 43.63).
+2. Arroz é o item com maior variação de preço entre marcas: 740% de diferença entre a opção mais barata ("Arroz Branco Camil Tipo 1 1kg", R$ 4.39) e a mais cara ("ARROZ ARBÓRIO LA PASTINA 1KG", R$ 36.90).
 
-3. Já Ovos é o item com menor variação de preço entre marcas (165%), sugerindo um mercado mais padronizado/menos diferenciado para esse produto nessa loja.
+3. Já Açúcar é o item com menor variação de preço entre marcas (234%), sugerindo um mercado mais padronizado/menos diferenciado para esse produto nessa loja.
 
-4. Arroz também é o item com maior dispersão de preços (desvio padrão de R$ 12.55), coerente com ser uma categoria com muitas marcas e variações de tipo/qualidade coletadas.
+4. Arroz também é o item com maior dispersão de preços (desvio padrão de R$ 10.15), coerente com ser uma categoria com muitas marcas e variações de tipo/qualidade coletadas.
+
+5. Produto mais barato de cada tipo (considerando todas as fontes):
+   - Arroz: "Arroz Branco Camil Tipo 1 1kg" — R$ 4.39 (Carrefour) — https://mercado.carrefour.com.br/produto/arroz-branco-camil-tipo-1-1kg-15310
+   - Feijão: "Feijao Preto Carrefour 1 Kg" — R$ 5.98 (Carrefour) — https://mercado.carrefour.com.br/produto/feijao-preto-carrefour-1-kg-6297839
+   - Açúcar: "Açúcar Refinado Carrefour 1kg" — R$ 2.69 (Carrefour) — https://mercado.carrefour.com.br/produto/acucar-refinado-carrefour-1kg-17755
+   - Óleo: "Óleo de Soja Confiare 900ml" — R$ 5.69 (Carrefour) — https://mercado.carrefour.com.br/produto/oleo-de-soja-confiare-900ml-325711880
+   - Ovos: "Ovos Brancos Jumbo Graciana Estojo com 10 Unidades" — R$ 5.98 (Carrefour) — https://mercado.carrefour.com.br/produto/ovos-brancos-jumbo-graciana-estojo-com-10-unidades-340331205

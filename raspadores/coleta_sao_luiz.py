@@ -16,19 +16,32 @@ no meio do caminho (ex.: 403 por excesso de requisicoes) - nao perde o que
 ja foi coletado nas categorias anteriores.
 """
 
+import csv
 import os
 import time
 
-import pandas as pd
 from dotenv import load_dotenv
 
 load_dotenv()  # carrega o .env pra dentro de os.environ
 
 import requests
 
+ARQUIVO_SAIDA = "dados/dados_brutos.csv"
+CAMPOS = [
+    "item_basico",
+    "nome_produto",
+    "preco",
+    "preco_original",
+    "desconto_percentual",
+    "codigo_produto",
+    "categoria_busca",
+    "fonte",
+    "url_produto",
+]
+LIMITE_POR_TERMO = 5
+PAUSA_ENTRE_REQUISICOES = 1.5
 MARKET_ID = 355
 BASE_URL = f"https://merconnect.mercadapp.com.br/mapp/v3/markets/{MARKET_ID}/items"
-
 # nome do item basico -> category_id (visto na URL como /subcategoria/<id>)
 ITENS_BASICOS = {
     "arroz": 13758,
@@ -78,22 +91,23 @@ def extrair_itens(payload: dict, item_basico: str) -> list[dict]:
             if item.get("original_price"):
                 calculo = (1 - (item.get("price") / item.get("original_price"))) * 100
                 desconto_percentual = round(calculo, 2)
+
+            slug = item.get("slug")
             registros.append(
                 {
                     "item_basico": item_basico,
-                    "nome_produto": item.get("description"),
+                    "nome_produto": item.get("description").strip(),
                     "preco": item.get("price"),
                     "preco_original": item.get("original_price"),
                     "desconto_percentual": desconto_percentual,
-                    "em_oferta": item.get("is_offer"),
-                    "loja_market_id": item.get("market_id"),
-                    "categoria_id": item.get("category_id"),
-                    "codigo_barras": item.get("bar_code"),
-                    "estoque": item.get("stock"),
-                    "slug": item.get("slug"),
-                    "url_produto": f"https://mercadinhossaoluiz.com.br/produto/{item.get('slug')}",
+                    "codigo_produto": item.get("bar_code") or item.get("id"),
                     "categoria_busca": item_basico,
-                    "fonte": "Mercadinho São Luiz",
+                    "fonte": "saoluiz",
+                    "url_produto": (
+                        f"https://mercadinhossaoluiz.com.br/produto/{slug}"
+                        if slug
+                        else None
+                    ),
                 }
             )
     return registros
@@ -102,20 +116,39 @@ def extrair_itens(payload: dict, item_basico: str) -> list[dict]:
 def coletar_categoria(item_basico: str, category_id: int) -> list[dict]:
     todos: list[dict] = []
     page = 1
-    while page <= MAX_PAGINAS_POR_CATEGORIA:
+    while len(todos) < LIMITE_POR_TERMO:
         payload = coletar_pagina(page, category_id)
         itens = extrair_itens(payload, item_basico)
         if not itens:
             break
         todos.extend(itens)
         print(
-            f"  {item_basico} (cat {category_id}) / pagina {page}: +{len(itens)} itens (total {len(todos)})"
+            f"  {item_basico} (cat {category_id}) / página {page}: +{len(itens)} itens (total {len(todos)})"
         )
         if not payload.get("has_next_page"):
             break
         page += 1
         time.sleep(PAUSA_ENTRE_REQUISICOES)
-    return todos
+    return todos[:LIMITE_POR_TERMO]
+
+
+def salvar_csv(produtos):
+    """Acrescenta linhas ao CSV único, criando header só na primeira vez."""
+    if not produtos:
+        print("Nenhum produto para salvar.")
+        return
+
+    os.makedirs(os.path.dirname(ARQUIVO_SAIDA), exist_ok=True)
+    arquivo_existe = os.path.exists(ARQUIVO_SAIDA)
+
+    with open(ARQUIVO_SAIDA, "a", newline="", encoding="utf-8-sig") as arquivo:
+        writer = csv.DictWriter(arquivo, fieldnames=CAMPOS, extrasaction="ignore")
+        if not arquivo_existe:
+            writer.writeheader()
+        for produto in produtos:
+            writer.writerow({campo: produto.get(campo) for campo in CAMPOS})
+
+    print(f"{len(produtos)} linhas acrescentadas em: {ARQUIVO_SAIDA}")
 
 
 if __name__ == "__main__":
@@ -127,12 +160,8 @@ if __name__ == "__main__":
             registros.extend(coletar_categoria(nome, cat_id))
         except requests.exceptions.HTTPError as e:
             print(
-                f"  [ERRO] Falhou em '{nome}': {e}. Seguindo com o que ja foi coletado."
+                f"  [ERRO] Falhou em '{nome}': {e}. Seguindo com o que já foi coletado."
             )
         time.sleep(PAUSA_ENTRE_REQUISICOES)
 
-    df = pd.DataFrame(registros)
-    df.to_csv("dados/dados_brutos.csv", index=False, encoding="utf-8-sig")
-    print(f"\nColetados {len(df)} registros -> dados/dados_brutos.csv")
-    if not df.empty:
-        print(df["item_basico"].value_counts())
+    salvar_csv(registros)

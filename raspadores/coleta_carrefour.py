@@ -1,4 +1,5 @@
 import csv
+import os
 import re
 import time
 import unicodedata
@@ -7,18 +8,30 @@ from urllib.parse import quote, urljoin
 import requests
 from bs4 import BeautifulSoup
 
+ARQUIVO_SAIDA = "dados/dados_brutos.csv"
+CAMPOS = [
+    "item_basico",
+    "nome_produto",
+    "preco",
+    "preco_original",
+    "desconto_percentual",
+    "codigo_produto",
+    "categoria_busca",
+    "fonte",
+    "url_produto",
+]
+
 BASE_URL = "https://mercado.carrefour.com.br"
+
 URL_BUSCA = f"{BASE_URL}/busca"
 
 TERMOS = {
-    "arroz": 15,
-    "feijao": 15,
-    "acucar": 15,
-    "oleo": 15,
-    "ovos": 15,
+    "arroz": 5,
+    "feijao": 5,
+    "acucar": 5,
+    "oleo": 5,
+    "ovos": 5,
 }
-
-ARQUIVO_SAIDA = "dados/dados_brutos_carrefour.csv"
 
 HEADERS = {
     "User-Agent": (
@@ -196,11 +209,11 @@ def extrair_produto(card, termo):
         "item_basico": termo,
         "nome_produto": nome,
         "preco": preco,
-        "preco_original": preco_original,
+        "preco_original": preco_original or preco,
         "desconto_percentual": desconto,
         "codigo_produto": codigo_produto,
         "categoria_busca": termo,
-        "fonte": "Carrefour",
+        "fonte": "carrefour",
         "url_produto": url_produto,
     }
 
@@ -237,42 +250,23 @@ def coletar_produtos(session, termo, limite):
     return produtos
 
 
-def salvar_csv(produtos, caminho):
-    """
-    Salva os dados brutos coletados.
-    """
-
+def salvar_csv(produtos):
+    """Acrescenta linhas ao CSV único, criando header só na primeira vez."""
     if not produtos:
         print("Nenhum produto para salvar.")
         return
 
-    campos = [
-        "nome_produto",
-        "preco",
-        "preco_original",
-        "desconto_percentual",
-        "codigo_produto",
-        "categoria_busca",
-        "fonte",
-        "url_produto",
-        "imagem_url",
-    ]
+    os.makedirs(os.path.dirname(ARQUIVO_SAIDA), exist_ok=True)
+    arquivo_existe = os.path.exists(ARQUIVO_SAIDA)
 
-    with open(
-        caminho,
-        "w",
-        newline="",
-        encoding="utf-8",
-    ) as arquivo:
-        writer = csv.DictWriter(
-            arquivo,
-            fieldnames=campos,
-        )
+    with open(ARQUIVO_SAIDA, "a", newline="", encoding="utf-8-sig") as arquivo:
+        writer = csv.DictWriter(arquivo, fieldnames=CAMPOS, extrasaction="ignore")
+        if not arquivo_existe:
+            writer.writeheader()
+        for produto in produtos:
+            writer.writerow({campo: produto.get(campo) for campo in CAMPOS})
 
-        writer.writeheader()
-        writer.writerows(produtos)
-
-    print(f"\nArquivo salvo em: {caminho}")
+    print(f"{len(produtos)} linhas acrescentadas em: {ARQUIVO_SAIDA}")
 
 
 def main():
@@ -310,10 +304,7 @@ def main():
 
         print(f"{termo}: {quantidade}")
 
-    salvar_csv(
-        todos_produtos,
-        ARQUIVO_SAIDA,
-    )
+    salvar_csv(todos_produtos)
 
 
 if __name__ == "__main__":
