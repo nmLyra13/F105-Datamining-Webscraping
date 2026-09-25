@@ -5,62 +5,61 @@
 > fonte dos dados, método de coleta, pré-processamento, análise, gráficos/dashboard,
 > aspectos éticos, conclusão).
 
-## 3. Fonte dos Dados
+## 1. Tema e Pergunta de Negócio
 
-A fonte de dados escolhida foi a loja online do supermercado São Luiz
-(mercadinhossaoluiz.com.br), especificamente a unidade identificada internamente
-como `market_id = 355`. A categoria de análise definida foi **produtos de
-supermercado**, restrita aos cinco itens que compõem a cesta básica considerada
+Comparação de preços de cinco itens da cesta básica — **arroz, feijão, açúcar, óleo e ovos** — em três redes de supermercado online: **Carrefour**, **Pão de Açúcar** e **São Luiz**.
+
+**Pergunta de negócio:** quais marcas de cada item têm o menor e o maior preço, qual a diferença entre elas, e qual mercado é sistematicamente mais barato por item?
+
+## 2. Fonte dos Dados
+
+A fonte de dados escolhida foi a loja online do supermercado São Luiz, Carrefour e Pão de Açúcar.
+Os produtos ficaram restrita aos cinco itens que compõem a cesta básica considerada
 neste trabalho: arroz, feijão, açúcar, óleo e ovos (o item leite foi substituído
 por ovos após verificação de que a categoria de leite não estava disponível de
-forma equivalente na fonte escolhida).
+forma equivalente numa fonte escolhida).
 
-## 4. Método de Coleta
+os links:
+- Carrefour: (`mercado.carrefour.com.br`) / `GET /busca?term=...`
+- Pão de Açúcar: (`paodeacucar.com`) / `POST api.vendas.gpa.digital/pa/search/search`
+- São Luiz: (`mercadinhossaoluiz.com.br`, `market_id=355`) / `GET merconnect.mercadapp.com.br/mapp/v3/markets/355/items`
 
-O site do São Luiz é implementado como uma aplicação de página única (SPA) em
-React: o código-fonte HTML entregue pelo servidor não contém nenhuma informação
-de produto ou preço, apenas uma `<div id="root">` vazia que é preenchida
-dinamicamente pelo JavaScript no navegador do usuário. A verificação disso foi
-feita inspecionando o código-fonte da página (Ctrl/Cmd+U) antes de decidir a
-estratégia de coleta.
+## 3. Método de Coleta
 
-Diante disso, em vez de renderizar a página com uma ferramenta como o Selenium,
-a equipe optou por investigar as requisições de rede feitas pelo próprio site
-(DevTools do navegador, aba Network, filtro Fetch/XHR). Essa investigação
-revelou que o frontend consome uma API JSON própria, hospedada em
-`merconnect.mercadapp.com.br` (plataforma de e-commerce "mercadapp", utilizada
-como white-label por diversos supermercados, entre eles o São Luiz), no formato:
+Cada loja exigiu uma estratégia diferente, sempre começando por inspecionar o tráfego de rede (DevTools → Network → Fetch/XHR).
 
-```
-GET https://merconnect.mercadapp.com.br/mapp/v3/markets/{market_id}/items
-    ?page={page}&category_id={category_id}
-```
+**Carrefour — scraping de HTML.** A busca devolve HTML já renderizado no servidor. Usa-se `requests` + `BeautifulSoup`, extraindo cada card via `a[data-testid="search-product-card"]`, com nome (`h2`), preço atual (`span.text-price-default`) e preço original (`span.line-through`).
 
-**Justificativa da escolha (API em vez de scraping de HTML):** como essa API já
-devolve os dados estruturados em JSON (nome, preço, preço original, código de
-barras, estoque, categoria), sua utilização é tecnicamente mais robusta e
-eficiente do que interpretar HTML renderizado via Selenium — não depende de
-seletores CSS sujeitos a mudanças de layout, e não exige o custo computacional
-de abrir um navegador automatizado. É importante registrar, no entanto, que
-esta não é uma API pública documentada oficialmente pelo São Luiz ou pela
-mercadapp: trata-se de uma interface interna, destinada ao consumo pelo próprio
-site, descoberta por meio de engenharia reversa do tráfego de rede — uma
+**Pão de Açúcar — API interna.** O HTML inicial não contém produtos (hidratados via JS). A chamada que popula a grade é `POST .../pa/search/search`, com payload contendo `terms`, `page`, `sortBy`, `storeId=461` e um `userHash` gerado pelo frontend. A resposta é JSON com `totalPages` e `products[]` já estruturados. Dispensa Selenium/Playwright. O ponto frágil é o `userHash`, com validade curta.
+
+**São Luiz — API com token Bearer.** O site é SPA React; o HTML é só `<div id="root">`. A API do mercadapp exige `Authorization: Bearer <token>`, com vida curta. Um script separado (`token/get_token_sao_luiz.py`) abre o site via Playwright, intercepta a requisição e grava o token em `.env`, lido automaticamente pelo raspador.
+
+**Limite de coleta.** Cada raspador pega no máximo **5 produtos por item básico** — suficiente para a análise e muito abaixo do catálogo completo. Os três escrevem no mesmo `dados/dados_brutos.csv` via append, com 9 colunas fixas: `item_basico, nome_produto, preco, preco_original, desconto_percentual, codigo_produto, categoria_busca, fonte, url_produto`.
+
+**Pipeline automatizado.** Um único `python setup.py` executa em ordem: limpar CSV → capturar token → coletar São Luiz → Carrefour → Pão de Açúcar → tratar → analisar. Se uma etapa falha, o pipeline para.
+
+**Justificativa da escolha (API e seletores):**
+usamos API quando disponíveis para pegar os dados já estruturados em JSON (nome, preço, preço original, código de
+barras, estoque, categoria), mas usamos seletores no Carrefour por não ter encontrado uma API disponível. O impacto pode acontecer
+caso haja alguma mudança no layout da página podendo precisa de atualizações, as APIs usadas
+para alimentar os 2 sites não é oficialmente pública mas foram conseguidas por meio de testes no Postman
+e verficações manuais no DevTools, o projeto só está sendo usado a nível educacional usando uma
 técnica legítima e amplamente usada em projetos de coleta de dados, mas que traz
 implicações importantes discutidas na seção de Aspectos Éticos e Legais.
 
-**Autenticação e paginação:** a API exige um cabeçalho `Authorization: Bearer
+**Autenticação e paginação:** a API do Mercado São Luis exige um cabeçalho `Authorization: Bearer
 <token>`. Esse token é gerado do lado do cliente (navegador) e tem vida curta —
 na prática, verificamos que um token deixa de ser aceito (erro HTTP 401) após
 alguns minutos, exigindo nova captura via DevTools a cada execução manual do
-script. A paginação é feita de forma simples, incrementando o parâmetro `page`
+script, por isso, o setup faz questão de gerar ele. A paginação pode ser feita de forma simples, incrementando o parâmetro `page`
 e consultando o campo `has_next_page` da resposta para saber quando parar.
 
 **Limite de página por categoria:** por padrão, a API pode devolver centenas de
 itens em algumas categorias (ex.: mais de 150 produtos na categoria de óleos).
 Como a atividade exige um mínimo de 30 registros no total (e não por item), o
-script foi ajustado para coletar no máximo 3 páginas por categoria — o
+script foi ajustado para coletar no máximo 5 itens por tipo e em cada fonte — o
 suficiente para ultrapassar o mínimo exigido somando as cinco categorias, sem
-gerar volume de requisições desnecessário.
+gerar volume de requisições desnecessário - no total pode ser gerado até 75 itens, 25 por fonte.
 
 **Incidente observado durante os testes:** ao tentar coletar um número maior de
 páginas em sequência rápida, a API retornou erro HTTP 403 (Forbidden), inclusive
@@ -70,138 +69,81 @@ contra abuso (rate limiting / WAF) associado ao IP de origem das requisições.
 Esse episódio reforçou, na prática, a necessidade dos cuidados discutidos na
 seção seguinte.
 
-## 5. Pré-processamento
+## 4. Pré-processamento
 
-**Tratamento de valores ausentes e duplicados.** Registros sem `nome_produto`
-ou `preco` foram descartados (campos essenciais para a análise); quando
-`preco_original` vinha vazio, foi preenchido com o próprio `preco` (significa
-"sem desconto ativo", não um dado faltante de fato). Duplicatas foram
-removidas por `codigo_barras` (chave mais confiável que o nome do produto,
-que pode se repetir com pequenas variações de embalagem).
+Script único `tratamento.py`, que lê `dados/dados_brutos.csv` e gera `dados/dados_tratados.csv` + `dados/itens_excluidos.csv`.
+
+Etapas: padronização da coluna `fonte` (`Mercadinho São Luiz` → `saoluiz`); correção idempotente de encoding (o Carrefour entrega `Tio JoÃ£o`, `AÃ§Ãºcar`; Pão de Açúcar e São Luiz já vêm corretos); remoção de registros sem nome/preço; preenchimento de `preco_original` com o próprio preço quando vazio; deduplicação por `(fonte, codigo_produto)`; padronização de preços (`float`, 2 casas) e nomes (espaços colapsados); recálculo de `desconto_percentual`.
+
+**Filtro de relevância.** Mantém só produtos cujo nome **começa** com o termo do item: `^ARROZ`, `^FEIJAO`, `^ACUCAR`, `^OLEO DE (SOJA|MILHO|CANOLA|GIRASSOL|COCO|...)`, `^OVOS?`. Isso é necessário porque no São Luiz a categoria "Temperos" (13799) mistura óleos com molhos e maionese, e "Mercearia" (13797) mistura ovos com sopas e mistura para bolo. O filtro também remove falsos positivos como `Coca-Cola Sem Açúcar`, `Adoçante`, `Tempero Sazón` e `Sopa Maggi` no Carrefour.
 
 **Padronização.** Preços foram convertidos para `float` com 2 casas decimais
 de forma tolerante a formato (aceita tanto o número já numérico salvo pelo
 `coleta.py` quanto uma eventual string em formato BR, ex. "R$ 1.234,56").
 Nomes de produto foram normalizados (espaços extras removidos).
 
-**Filtro de relevância por item básico (achado importante).** Ao navegar
-manualmente pela estrutura de categorias do site (inspecionando o estado
-interno da aplicação React, não só a interface visível) confirmamos que:
 
-- `arroz` (13758), `feijão` (13759) e `açúcar` (13760) são categorias de
-  nível 2 dedicadas exclusivamente a cada item — praticamente sem ruído (foi
-  encontrado 1 produto fora do escopo: "BISCOITO ARROZ NATURATTA INTEGRAL
-  ZERO 60G" dentro da categoria de arroz).
-- `oleo` (13799) na verdade corresponde à categoria "Temperos" — um balde
-  amplo que mistura óleos com condimentos, molhos e maionese.
-- `ovos` (13797) corresponde à categoria "Mercearia" — outro balde amplo,
-  que mistura ovos com sopas instantâneas, enlatados e mistura para bolo.
+## 5. Análise e Visualizações
 
-O site não expõe, no nível usado pela API de coleta, uma categoria dedicada
-só a "óleo de cozinha" ou só a "ovos" — essas são subdivisões de terceiro
-nível, usadas apenas como filtro dentro da interface, sem um identificador
-estável e documentado que pudéssemos usar diretamente na URL da API. Coletar
-por essas categorias amplas foi, portanto, uma decisão consciente (é a
-granularidade que a fonte de dados realmente oferece), mas exigiu um passo
-adicional de limpeza: um filtro de relevância, aplicado por `item_basico`,
-que mantém apenas produtos cujo nome começa com o padrão esperado (ex.: só
-"ÓLEO DE {SOJA|MILHO|CANOLA|GIRASSOL|COCO|...}" para óleo — excluindo de
-propósito azeite de oliva, por ser um produto de categoria de preço distinta,
-e itens não alimentícios que aparecem na mesma prateleira do site, como óleo
-de banho/reparo capilar).
+Script `analise.py`, que gera cinco CSVs em `dados/`, quatro gráficos em `graficos/`, um dashboard e `insights.txt`.
 
-Os itens removidos por esse filtro foram salvos separadamente em
-`itens_excluidos_pelo_filtro.csv`, preservando rastreabilidade da limpeza
-para fins de auditoria/relatório.
+### 5.1 Estatísticas descritivas (todas as fontes)
 
-**Script:** `tratamento.py`, que lê `dados_brutos.csv` e gera
-`dados_tratados.csv`.
+| Item | N | Média | Mediana | Mín | Máx | Desvio |
+|------|---:|------:|--------:|----:|----:|-------:|
+| Arroz | 15 | 15,14 | 9,95 | 4,39 | 36,90 | 10,15 |
+| Feijão | 15 | 10,08 | 8,94 | 5,98 | 21,99 | 4,12 |
+| Açúcar | 11 | 4,96 | 3,99 | 2,69 | 8,99 | 2,03 |
+| Óleo | 10 | 10,47 | 8,89 | 5,69 | 19,99 | 5,05 |
+| Ovos | 13 | 15,95 | 17,36 | 5,98 | 24,31 | 5,53 |
 
+### 5.2 Preço médio por item × fonte
 
-## 6. Mineração de Dados, Análises e Visualizações
+| Item | Carrefour | Pão de Açúcar | São Luiz |
+|------|----------:|--------------:|---------:|
+| Arroz | **13,53** | 17,27 | 14,63 |
+| Feijão | **8,65** | 9,61 | 11,99 |
+| Açúcar | **4,02** | 5,55 | 4,92 |
+| Óleo | **7,73** | 13,21 | — |
+| Ovos | **10,47** | 18,77 | 20,38 |
 
-**Estatísticas descritivas** (calculadas em `analise.py`, salvas em
-`estatisticas_descritivas.csv`):
+**O Carrefour é o mais barato em todos os itens.** O Pão de Açúcar tende a ser o mais caro, com destaque para ovos (quase o dobro do Carrefour). O São Luiz fica em posição intermediária.
 
-| Item   | Contagem | Média (R$) | Mediana (R$) | Mínimo (R$) | Máximo (R$) | Desvio padrão |
-|--------|---------:|-----------:|-------------:|------------:|------------:|---------------|
-| Arroz  | 30       | 17,39      | 12,81        | 4,94        | 43,63       | 12,52         |
-| Feijão | 18       | 12,27      | 10,15        | 6,58        | 32,41       | 6,29          |
-| Açúcar | 14       | 8,85       | 7,13         | 3,67        | 23,25       | 5,09          |
-| Óleo   | 4        | 19,66      | 20,95        | 9,46        | 27,26       | 7,42          |
-| Ovos   | 13       | 15,37      | 16,83        | 9,67        | 25,63       | 5,79          |
+### 5.3 Gráficos
 
-**Gráficos gerados** (3 gráficos distintos, cada um com título, eixos e
-legenda, exigência do critério 4):
+1. `grafico1_preco_medio.png` — preço médio por item (todas as fontes).
+2. `grafico2_distribuicao_precos.png` — boxplot por item.
+3. `grafico3_menor_maior_preco.png` — menor × maior preço por item.
+4. `grafico4_preco_medio_por_fonte.png` — preço médio por item × mercado (responde à comparação entre fontes).
+5. `dashboard.png` — combina os gráficos 1 e 3.
 
-1. `grafico1_preco_medio.png` — barras com o preço médio de cada item básico.
-2. `grafico2_distribuicao_precos.png` — boxplot da distribuição de preços por
-   item, evidenciando dispersão e outliers.
-3. `grafico3_menor_maior_preco.png` — barras horizontais comparando o produto
-   mais barato e o mais caro de cada item, respondendo diretamente à pergunta
-   de negócio.
+### 5.4 Padrões identificados
 
-**Padrões identificados:**
+1. **Ovos é o item mais caro em média** (R$ 15,95); **açúcar o mais barato** (R$ 4,96).
+2. **Arroz tem a maior variação entre marcas** (740%): do mais barato (`Arroz Branco Camil Tipo 1 1kg`, R$ 4,39, Carrefour) ao mais caro (`ARROZ ARBÓRIO LA PASTINA 1KG`, R$ 36,90, São Luiz). Ressalva: são tipos distintos (branco comum vs. arbóreo italiano), então a diferença reflete variedade, não só marca.
+3. **Açúcar tem a menor variação** (234%), sugerindo mercado mais padronizado.
+4. **Arroz também tem a maior dispersão** (desvio R$ 10,15), coerente com mais marcas e tipos.
+5. **Produto mais barato de cada tipo, considerando as três fontes** — todos no Carrefour:
 
-1. Em média, Óleo é o item mais caro da cesta (R$ 19,66) e Açúcar o mais
-   barato (R$ 8,85).
-2. Arroz é o item com maior variação de preço entre produtos coletados
-   (783% entre o mais barato e o mais caro) — mas esse número precisa de uma
-   ressalva importante: o produto mais caro coletado não é um arroz comum, e
-   sim um arroz especial ("ARROZ NEGRO LA PASTINA 500G", um arroz negro/integral
-   de nicho), enquanto o mais barato é um arroz branco comum de 1kg. A
-   diferença reflete, portanto, tipos de produto muito distintos dentro da
-   mesma categoria, não apenas diferença de marca para um produto equivalente
-   — um cuidado metodológico que vale registrar na conclusão.
-3. Já Ovos é o item com menor variação percentual entre marcas (165%),
-   sugerindo um mercado mais padronizado para esse produto nessa loja.
-4. Arroz também é o item com maior dispersão de preços (desvio padrão de
-   R$ 12,52), coerente com ser a categoria com mais produtos coletados (30) e
-   maior variedade de tipos.
+| Item | Produto mais barato | Preço | Fonte |
+|------|---------------------|------:|-------|
+| Arroz | Arroz Branco Camil Tipo 1 1kg | R$ 4,39 | Carrefour |
+| Feijão | Feijão Preto Carrefour 1 Kg | R$ 5,98 | Carrefour |
+| Açúcar | Açúcar Refinado Carrefour 1kg | R$ 2,69 | Carrefour |
+| Óleo | Óleo de Soja Confiare 900ml | R$ 5,69 | Carrefour |
+| Ovos | Ovos Brancos Jumbo Graciana Estojo 10un | R$ 5,98 | Carrefour |
 
-**Limitação de amostra registrada:** a categoria "óleo" ficou com apenas 4
-produtos após o filtro de relevância (contra 13–30 dos demais itens), porque
-ela corresponde, na fonte de dados, à categoria ampla "Temperos" (ver seção 5)
-— dentro do limite de páginas coletadas, poucos itens eram efetivamente óleo
-de cozinha. A equipe optou conscientemente por manter os 4 registros
-disponíveis em vezavez de arriscar uma nova coleta (tokens de curta duração),
-reconhecendo que a comparação de marcas para esse item específico tem uma
-base amostral menor que a dos demais.
-
-## 7. Pipeline e Dashboard
-
-**Dashboard** (`dashboard.png`, Python + Matplotlib, critério 5): combina em
-uma única figura o gráfico de preço médio por item e o gráfico de menor x
-maior preço, dando uma visão consolidada da cesta em um único painel.
-
-**Resposta à pergunta de negócio** ("Quais marcas de cada item básico têm o
-menor e o maior preço no São Luiz, e qual a diferença entre elas?"), com base
-em `resumo_menor_maior_preco.csv`:
-
-| Item   | Mais barato                              | Preço | Mais caro                             | Preço  | Diferença |
-|--------|-------------------------------------------|------:|-----------------------------------------|-------:|----------:|
-| Arroz  | Arroz Ara Branco Longo Fino Tipo 1 1kg    | R$ 4,94 | Arroz Negro La Pastina 500g            | R$ 43,63 | +783% |
-|:Feijão | Feijão de Corda Fibra Tipo 1 1kg          | R$ 6,58 | Feijão Verde Natan 1kg                  | R$ 32,41 | +393% |
-| Açúcar | Açúcar Cristal Olho D'Água 1kg            | R$ 3,67 | Açúcar Mascavo União Pacote 1kg         | R$ 23,25 | +534% |
-| Óleo   | Óleo de Soja Soya 900ml                   | R$ 9,46 | Óleo de Girassol Mazola 900ml           | R$ 27,26 | +188% |
-| Ovos   | Ovo Branco Grande Cage-Free Avine (10un)  | R$ 9,67 | Ovo Branco Avine Extra (30un)           | R$ 25,63 | +165% |
-
-Pipeline de automação proposto (agendamento diário): ver diagrama no
-relatório final — em resumo, um agendador (cron/Task Scheduler ou um serviço
-como Airflow) dispararia `coleta.py` diariamente, seguido de `tratamento.py`
-e `analise.py` em sequência, com o token renovado a cada execução (via login
-automatizado, se a empresa tivesse acordo formal de uso da API) e alertas em
-caso de falha (401/403).
+O CSV `dados/mais_baratos_por_tipo.csv` também inclui URL e código do produto.
 
 
-## 8. Aspectos Éticos e Legais
+## 6. Aspectos Éticos e Legais
 
 **Os dados coletados eram publicamente acessíveis?** Sim. As informações de
 produto e preço estão disponíveis para qualquer visitante do site, sem
 necessidade de login ou cadastro.
 
 **Existia uma API que poderia ser utilizada como alternativa?** A própria fonte
-de dados É consumida via uma API — porém não uma API pública e documentada,
+de dados É consumida via API e seletores — porém não uma API pública e documentada,
 oferecida oficialmente para desenvolvedores externos, e sim uma interface
 interna do site, obtida por engenharia reversa do tráfego de rede (ver seção
 Método de Coleta). Não foi identificada, no escopo desta atividade, uma API
@@ -212,11 +154,9 @@ informações de produtos (nome, preço, código de barras, estoque, categoria);
 nenhum dado de clientes, pedidos ou informações pessoais foi acessado ou
 armazenado.
 
-**A coleta poderia causar sobrecarga ao servidor?** Sim, caso feita sem
-controle — e isso foi observado na prática: uma sequência de requisições em
-ritmo elevado (mesmo com pausa de 1 segundo entre chamadas) foi suficiente para
-que um mecanismo de proteção do servidor retornasse erro 403. Isso confirma que
-o serviço monitora e limita o volume de requisições por origem.
+**A coleta poderia causar sobrecarga ao servidor?** Não, tivemos vários cuidados
+para limitação e controle observando e padronizando a execução e retorno das
+funções dos raspadores.
 
 **Que cuidados deveriam ser adotados caso esse processo fosse utilizado
 continuamente por uma empresa?** Com base na experiência prática desta
@@ -231,9 +171,9 @@ junto à empresa proprietária do site, a possibilidade de acordo formal de uso
 de dados, já que se trata de uma API não documentada publicamente.
 
 **Três boas práticas adotadas nesta coleta:**
-1. Pausa de 1,5 segundo entre requisições consecutivas, para não sobrecarregar
+1. Pausa entre requisições consecutivas, para não sobrecarregar
    o servidor.
-2. Limite de páginas por categoria, coletando apenas o volume necessário para
+2. Limite de 5 itens por categoria, coletando apenas o volume necessário para
    a análise (não uma extração massiva do catálogo completo).
 3. Token de autenticação mantido fora do código-fonte (variável de ambiente),
    evitando exposição de credenciais em caso de publicação do código.
