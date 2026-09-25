@@ -26,7 +26,11 @@ playwright install chromium
 ```
 
 ## Como executar
-```python setup.py```
+
+```
+python setup.py
+```
+
 Isso executa, em ordem: captura do token do São Luiz → coleta nos 3 mercados → tratamento dos dados → análise e geração dos gráficos.
 
 Se uma etapa falhar, o pipeline para e mostra onde.
